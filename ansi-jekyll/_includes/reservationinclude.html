@@ -1,0 +1,34 @@
+<section class="reservation ">
+    <div class="reservation-inside">
+      <h2 class="reservation-title" >Reservation</h2>
+        <form action="http://getsimpleform.com/messages?form_api_token=61cdf75d210a898a9c2caa21d0791ab8" method="post">
+          <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+          <input type='hidden' name='redirect_to' value='http://alpine-lierne.codio.io:4000/thankyou' />
+          <!-- all your input fields here.... -->
+           <div class="reservation-left">
+              <label>Check in</label>
+                <input type="text" name='checkin' id="checkin">
+              <label>Name</label>
+                  <input type='text' name='Name' placeholder="Name">
+              <label>Room Type</label>
+                   <select id="edit-submitted-room-type" name="submitted[room_type]" class="form-select required">
+                   <option value="" selected="selected">- Select -</option>
+                   <option value="1">Studio</option>
+                   <option value="2">One bedroom apartment</option>
+                   <option value="3">Two bedroom apartment</option>
+                    </select>
+             </div>
+            <div class="reservation-right">            
+                <label>Check out</label>
+                    <input type="text" name='checkout' id="checkout">
+                <label>Email</label>
+                    <input type='text' name='Email' placeholder="Email">
+                <label>Persons</label>
+                    <input type="number" id="edit-submitted-persons" name="submitted[persons]" value="2" step="1" class="form-text form-number required">
+                 <input type='submit' value='Send'>
+            </div>
+         
+            
+        </form>
+    </div>
+</section>

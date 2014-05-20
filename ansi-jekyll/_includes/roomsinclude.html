@@ -1,0 +1,22 @@
+
+{% for post in site.categories['rooms'] %} 
+
+<section class="rooms {{ post.section }} ">
+    <a name="{{ post.section }}"></a>
+<div class="rooms-inside">    
+    <h2 class="rooms-title" >{{ post.title }} </h2>
+    <h4 class="rooms-subtitle" >{{ post.subtitle }} </h4>
+    <div class="column-left">
+         <div class="rooms-img">
+             <img src="{{ post.image }}">
+        </div>
+    </div>
+    <div class="column-right">
+        <div class="rooms-description"> {{ post.content }} </div>
+    </div>
+
+    </div>
+</section>
+
+{% endfor %}
+
