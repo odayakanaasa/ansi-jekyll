@@ -86,7 +86,8 @@ p {
 
 .navigation nav,
 .rooms-inside, 
-.reservation-inside {
+.reservation-inside,
+.site-footer .wrap {
     @include container(70em);
 }
 
@@ -235,3 +236,14 @@ input[type="reset"], input[type="submit"] {
     vertical-align: top;
     width: auto;
 }
+/* Footer */
+    .site-footer  {
+        background: #dddddd;
+        .footer-col-2,
+        .footer-col-1 {
+            @include span(4 of 12);            
+        }
+        .footer-col-3 {
+            @include span(4 last of 12);
+        }
+    }
