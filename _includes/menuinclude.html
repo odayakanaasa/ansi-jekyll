@@ -1,8 +1,7 @@
 <section class="navigation">
     <nav>
-       {% for post in site.categories['rooms'] %} 
-        <a href="#{{ post.section }}" id="{{ post.section }}">{{ post.section }}</a>
+       {% for menu in site.data.menu %} 
+        <a href="{{ menu.href }}" id="{{ menu.title }}">{{ menu.title }}</a>
        {% endfor %}
-        <a href="#reservation" id="reservation" >Reservation</a>
     </nav>
   </section>

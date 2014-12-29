@@ -1,0 +1,14 @@
+- title: Studio
+  href: "#studio"
+
+- title: One bedroom
+  href: "#onebedroom"
+  
+- title: Two bedroom
+  href: "twobedroom"
+  
+- title: Contact
+  href: "#contact"
+  
+- title: Reservation
+  href: "#reservation"

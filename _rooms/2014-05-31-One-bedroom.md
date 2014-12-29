@@ -1,7 +1,6 @@
 ---
 layout: rooms
 title: One Bedroom
-date: {}
 categories: rooms
 image: "http://ansi-almyrida.gr/sites/ansi-almyrida.gr/files/styles/large/public/20100825_ALMYRIDA_ANSI_185_2.jpg"
 subtitle: 2 Persons
