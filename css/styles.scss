@@ -137,11 +137,7 @@ section {
         }
         
 }
-.fxd {
-        top: none!important;
-        bottom:0!important;
- }
- 
+
 
 
 .rooms-inside {
@@ -233,14 +229,21 @@ section {
         line-height: 1.3em;
     }
 }
-.studio {
+/* Colors */
+.almyrida {
     background: #FFFFE5;
 }
 .onebedroom {
+    background: #F2E2D2;
+}
+.studio {
+    background: #FFFFE5;
+}
+.twobedroom {
     background: #f2f2ef;
 }
 .reviews {
-    background: #ccc;
+    background: #cccccc;
 }
 .reservation {
     background: #41505E;
