@@ -1,0 +1,16 @@
+ <section id="reviews" class="reviews">
+            <div class="reviews-inside">    
+                <h2 class="reviews-title" >Reviews </h2>
+                {% for review in site.data.reviews %}
+       <div class="review">     
+           <div class="review-inside">
+<h4 id="everything-was-great">{{ review.title }}</h4>
+               <div class="review-details">{{ review.visitor }} / {{ review.date }}</div>
+<p>{{ review.review }}
+                </div>  
+                </div>
+                {% endfor %}
+                
+
+                </div>
+        </section>

@@ -5,49 +5,10 @@
                 <meta name="viewport" content="width=device-width">
                 <meta name="description" content="{{ site.description }}">
                 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-                <!-- Reset CSS -->
-                <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>     
-                <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/jquery-ui.css"/> 
-                <!-- Flexslider CSS -->
-                <link rel="stylesheet" href="css/flexslider.css"/>
-                <!-- Font awesome -->
-                <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
                 <!-- Custom CSS -->
-                <link rel="stylesheet" href="css/styles.css"/>
-                <!-- Modernizr -->
-              	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
-                <!-- Jquery -->
-                <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-                <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-                <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flexslider/2.2.2/jquery.flexslider-min.js"></script>                             
-                <!--Brick Fonts-->
-                <link rel="stylesheet" href="//brick.a.ssl.fastly.net/PT Sans:400, 400i, 700, 700i/Montserrat:400,700">
-                <!--Smint jquery -->
-<!--                 <script type="text/javascript" 	src="js/jquery.smint.js"></script> -->
-                <!--Flexslider-->
-                   <script type="text/javascript">
-                    // Can also be used with $(document).ready()
-                     $(window).load(function(){
-                      $('.flexslider').flexslider({
-                        animation: "slide",
-                        animationLoop: true,
-                        pausePlay: true,
-                        controlNav: false,
-                          directionNav:false,
-                        start: function(slider){
-                          $('body').removeClass('loading');
-                        }
-                      });
-                    });
-                       $(function() {
-                        $( "#checkin,#checkout" ).datepicker();
-                      });
-                      //                 Smint 
-//                     $(document).ready( function() {
-//                         $('.navigation').smint({
-//                             'scrollSpeed' : 1000
-//                         });
-//                     });
-                    </script>
+                <link rel="stylesheet" href="css/include-css.css"/>
+                <link rel="stylesheet" href="css/styles.css"/>                               
+                
+                              
+
             </head>

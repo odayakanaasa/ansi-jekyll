@@ -1,9 +1,12 @@
 ---
 ---
+/* start content */
+@import "susy-config";
+@import "sass-components";
+@import "include-css.css";
 
-// start content
-@import "susy";
-//Compass mixins
+/* Compass mixins */
+    
 @mixin no-bullet {
   list-style-image: none;
   list-style-type: none;
@@ -15,6 +18,7 @@
     @include no-bullet;
   }
 }
+
 @mixin inline-list {
   list-style-type: none;
   &, & li {
@@ -23,15 +27,33 @@
     display: inline;
   }
 }
-
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('fonts/BebasNeue Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/BebasNeue Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/BebasNeue Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/BebasNeue Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/BebasNeue Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('fonts/PTS55F-webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/PTS55F-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/PTS55F-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/PTS55F-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 body {
-    font-family: 'PT sans';
+    font-family: 'PT Sans';
     font-size: 13px;
     font-size: 100%;
+    overflow-x: hidden; 
 }
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Montserrat';
-    font-weight: bold;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue','Montserrat',Arial;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
 }
 h2 {
     font-size: 4em;
@@ -41,8 +63,15 @@ h4 {
     padding-bottom: 0.5em;
 }
 p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
     font-size: 1.4em;
+    line-height: 1.4em;
     margin-bottom:0.5em;
+}
+section {
+    @include full;
 }
 .flexslider {
     margin: 0;
@@ -51,29 +80,32 @@ p {
     position: relative;
     border-radius: 0px;
     zoom: 1;
+    
 }
+
 .slideshow-message {
     z-index: 2000;
     height: 100%;
     padding-left: 5px;
     padding-right: 5px;
-    @include container(80%);
+    @include container;
         .slideshow-message-inside {        
         position: absolute;
-        top: 12em;
+        top: 8em;
         }
         h1 {
-            font-family: 'Montserrat';
+            font-family: 'Bebas Neue','Montserrat',Arial;
             background: #ef9a49;
             margin: 0;
             padding: 10px 10px;
             line-height: 65px;
-            border: none;
+            border: 0;
             font-size: 5em;
             text-transform: uppercase;
             font-weight: normal;
         }
         h3 {
+            font-family: 'PT Sans';
             display: inline-block;
             background: white;
             color: #5f5f5f;
@@ -84,7 +116,7 @@ p {
 }
 
 
-.navigation nav,
+.navigation .menu,
 .rooms-inside, 
 .reservation-inside,
 .site-footer .wrap {
@@ -92,12 +124,11 @@ p {
 }
 
 .navigation {
-    top: 462px;
     background: #26292f;
     opacity: 0.9;
     width: 100%;
         a {
-            font-size: 1.8em;
+            font-size: 1.5em;
             color: #ffffff;
             text-transform: uppercase;
             padding: 5px 2em 5px 0em;
@@ -106,18 +137,35 @@ p {
         }
         
 }
-
-  
+.fxd {
+        top: none!important;
+        bottom:0!important;
+ }
+ 
 
 
 .rooms-inside {
     padding-top: 6em;
     padding-bottom: 8em;
     .column-left {
-        @include span(7 of 12); 
+        @include span(10 of 16);
+        .flexslider-rooms .flex-control-thumbs li {
+            width: 62px;
+            float: left;
+            margin-right: 5px;
+                img {
+                    background: none;
+                    padding: 0;
+                }
+         }
+        img {
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #ddd;
+        }
     }
     .column-right {
-        @include span(5 at 8 of 12);
+        @include span(6 last at 10 of 16);
             table {
                 -webkit-font-smoothing: antialiased;
                 font-size: 1.2em;
@@ -130,7 +178,7 @@ p {
                 background-color: #70c469;
                 font-weight: normal;
                 color: #6f6f6f;
-                padding: 20px;
+                padding: 20px 0 0 0;
                 text-align: center;
                 }
             table tr td {
@@ -139,6 +187,50 @@ p {
                 color: #6f6f6f;
                 text-align: center;
                 }
+            table tr td.row_1 {
+                background-color: #70c469;
+                padding: 5px 10px 0 10px;
+                font-size: .8em;
+                color: #ddd;
+                }
+            table tr td.row_2{
+                background-color: #70c469;
+                padding: 0 10px 20px 0;
+                font-size: .8em;
+                color: #ddd;
+                }
+        
+    }
+    .rooms-footer {
+            @include span(12 of 12); 
+            .link-button {
+            float: right;
+            }
+        }
+}
+.almyrida .rooms-inside .column-right table th {
+    padding: 20px 0;
+}
+.reviews-inside {
+    @include container;
+        padding-top: 6em;
+    padding-bottom: 8em;
+    .review {
+        @include gallery(4 of 12);
+        margin-bottom: 30px;
+        .review-inside {
+            border: 1px #eee solid;
+            padding: 20px;
+            background: #f5f5f5;
+            .review-details {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.3em;
     }
 }
 .studio {
@@ -146,6 +238,9 @@ p {
 }
 .onebedroom {
     background: #f2f2ef;
+}
+.reviews {
+    background: #ccc;
 }
 .reservation {
     background: #41505E;
@@ -177,14 +272,46 @@ p {
     .reservation-right {
         @include span(5 at 6 of 12);
         input,
-        label {
-            @include span(6 at 6 of 12);
-            margin-bottom: 1em;
+            label {
+                @include span(6 at 6 of 12);
+                margin-bottom: 1em;
+            }    
+        }
+    .reservation-message {
+        @include span(12);
+        margin-bottom: 2em;
+        width: 100%;
+        label{
+            @include span(12);
+            margin-bottom: 1.2em;
+            width: 100%;
+        }
+        textarea {
+            height: 5em;
+            width: 100%;
         }
     }
+    .parsley-errors-list {
+        display: inline;
+        float: left;
+        background: #ECB34C;
+        padding: 0.5em 2em;
+    }
     
+  }
+/* Reservatiion date Picker */
+.rd-container {
+    th,td {
+    font-size: 1.1em; 
+    padding: 0.3em;
+    }
 }
-textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+
+textarea, select, input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="email"], input[type="month"], 
+input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -235,6 +362,28 @@ input[type="reset"], input[type="submit"] {
     text-decoration: none;
     vertical-align: top;
     width: auto;
+}
+.contact {
+    @include push(7 of 12);
+    @include span(2 of 12);
+    margin-top: -425px;
+    height: 250px;
+    position:absolute;    
+    background-color: #88505a;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #fff;
+    .email,
+    .phone {
+        font-size: 1.5em;
+        line-height: 3em;
+     }
+    a {
+      color: #fff;
+        text-decoration:none;
+
+    }
 }
 /* Footer */
     .site-footer  {

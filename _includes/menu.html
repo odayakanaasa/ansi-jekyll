@@ -1,0 +1,7 @@
+<div class="navigation smint">
+    <div class="menu">
+       {% for menu in site.data.menu %} 
+        <a id="{{ menu.href }}" href="#{{ menu.href }}" >{{ menu.title }}</a>
+       {% endfor %}
+    </div>
+  </div>

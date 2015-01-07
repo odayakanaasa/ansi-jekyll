@@ -1,0 +1,20 @@
+ <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+              {% for image in site.data.slideshow %} 
+            <li>
+  	    	     <img class="lazy" src="http://placehold.it/921x537/bada55/111&text=Loading..." data-src="{{ image.src | prepend: '/assets/' }}">
+  	    		</li>
+              {% endfor %}
+  	    	</ul>
+        </div>
+      </section>
+
+    <div class="slideshow-message">
+        <div class="slideshow-message-inside">
+                <h1 class="slideshow-title">STAY IN ANSI APARTMENTS</h1>
+                <h3 class="slideshow-subtitle">Explore Crete, enjoy the sun, stay in Almyrida!</h3>
+            </div>
+     </div>
+
+

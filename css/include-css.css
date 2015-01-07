@@ -1,0 +1,7 @@
+---
+---
+/* <!-- Flexslider CSS --> */
+{% include bower_components/flexslider/flexslider.css %}
+/* <!--  Rome --> */
+{% include bower_components/rome/dist/rome.min.css %}
+{% include bower_components/parsleyjs/src/parsley.css %}

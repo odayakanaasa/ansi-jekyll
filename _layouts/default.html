@@ -4,22 +4,29 @@
   {% include head.html %}
 
     <body>
+    <div class="page">
+        <div class="page-wrapper">
+            
+    {% include slideshow.html %}
+                
+    {% include menu.html %}
+            
+    {% include almyrida.html %}
+    
+    {% include rooms.html %}
+        
+	{% include reviews.html %}
+               
+    {% include reservation.html %}
+        
+    {% include map.html %}
+            
+            </div>
+        </div>
+         <!-- Js all-->
+         <script type="text/javascript" src="js/js-all.js"></script> 
 
-    {% include slideshowiclude.html %}
         
-    {% include slideshowmessageinclude.html %}
-        
-    {% include menuinclude.html %}
-        
-	{% include roomsinclude.html %}
-        
-	{% include contact.html %}
-        
-    {% include reservationinclude.html %}
-        
-    {% include maps.html %}
-
-    {% include footer.html %}
-
+      
     </body>
 </html>

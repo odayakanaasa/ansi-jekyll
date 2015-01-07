@@ -1,14 +1,17 @@
 - title: Studio
-  href: "#studio"
+  href: "studio"
 
 - title: One bedroom
-  href: "#onebedroom"
+  href: "onebedroom"
   
 - title: Two bedroom
   href: "twobedroom"
   
 - title: Contact
-  href: "#contact"
+  href: "map"
   
 - title: Reservation
-  href: "#reservation"
+  href: "reservation"
+  
+- title: Reviews
+  href: "reviews"

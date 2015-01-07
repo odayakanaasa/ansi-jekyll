@@ -1,0 +1,52 @@
+ <section id="almyrida"class="almyrida">
+            <div class="rooms-inside">    
+                <h2 class="rooms-title" >ANSI - ALMYRIDA </h2>
+                <h4 class="rooms-subtitle" >ENJOY MAGNIFICENT VIEWS FROM YOUR BALCONY</h4>
+                <div class="column-left">
+                     <div class="rooms-img">
+                        <div class="flexslider-rooms">
+                          <ul class="slides">
+                              {% for image in site.data.almyrida %}
+                            <li data-thumb="{{ image.src | prepend: '/assets/thumbnails/' }}">
+                              <img src="{{ image.src | prepend: '/assets/' }}" />
+                            </li>
+                              {% endfor %}
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-right">
+                    
+                    <div class="rooms-description"> 
+                        <p>
+                        Ansi apartments are built in the picturasque village of Almyrida. Almyrida is located at the entrance of Souda Bay and is a small scenic
+
+fisherman's village. Ansi apartments are conviniently located 500m from Almyrida centre and just 70 steps to the beach, offering
+
+a tranquil environment for relaxation, as well as magnificent views and romantic sunsets from your balcony..</p>
+                    </div>
+                    
+                   <table class="rooms">
+                       <thead>
+                           <tr>
+                           <th class="row_0 col_0">Studio</th>
+                           <th class="row_0 col_1">One Bedroom</th>
+                           <th class="row_0 col_2">Two Bedroom</th> 
+                           </tr>
+                       </thead>
+                       <tbody>                     
+                         <tr>                          
+                           <td >from 30€ </td>
+                           <td >from 45€  </td>
+                            <td>from 70€ </td>
+                       </tr>   
+                           </tbody>
+                    </table>
+                   
+                </div>
+            <div class="rooms-footer">
+                 <div class="link-button"><a href="#reviews" class="button  button-flat button-primary">
+                        <i class="icon-chevron-right"></i>Reviews</a></div>
+                </div>
+                </div>
+        </section>
