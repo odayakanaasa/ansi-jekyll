@@ -9,7 +9,7 @@
                           <ul class="slides">                              
                               {% capture appartment %} {{ room.section }} {% endcapture %}
                               {% for image in site.data.[room.section] %}                             
-                                <li data-thumb="{{ image.src | prepend: 'assets/thumbnails/' }}">
+                                <li data-thumb="{{ image.src | prepend: 'assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
                                     {{ image.section }}
                                   <img class="lazy" src="http://placehold.it/635x350/bada55/111&text=Loading..." data-src="{{ image.src | prepend: 'assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
                                 </li>
