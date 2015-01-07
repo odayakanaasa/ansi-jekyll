@@ -127,6 +127,7 @@ section {
     background: #26292f;
     opacity: 0.9;
     width: 100%;
+    z-index: 5000;
         a {
             font-size: 1.5em;
             color: #ffffff;
@@ -135,10 +136,8 @@ section {
             text-decoration: none;
             line-height: 45px;
         }
-        
+      
 }
-
-
 
 .rooms-inside {
     padding-top: 6em;
