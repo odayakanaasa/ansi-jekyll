@@ -11,7 +11,7 @@
                               {% for image in site.data.[room.section] %}                             
                                 <li data-thumb="{{ image.src | prepend: '/assets/thumbnails/' }}">
                                     {{ image.section }}
-                                  <img class="lazy" src="http://placehold.it/635x350/bada55/111&text=Loading..." data-src="{{ image.src | prepend: '/assets/' }}" width="662" height="445"/>
+                                  <img class="lazy" src="http://placehold.it/635x350/bada55/111&text=Loading..." data-src="{{ image.src | prepend: '/assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
                                 </li>
                                {% endfor %}
                           </ul>
