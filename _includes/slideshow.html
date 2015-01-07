@@ -3,7 +3,7 @@
           <ul class="slides">
               {% for image in site.data.slideshow %} 
             <li>
-  	    	     <img class="lazy" src="http://placehold.it/1600x537/bada55/111&text=Loading..." data-src="{{ image.src | prepend: '/assets/' }}">
+  	    	     <img class="lazy" src="http://placehold.it/1600x537/bada55/111&text=Loading..." data-src="{{ image.src | prepend: 'assets/'  | prepend: site.baseurl | prepend: site.url}}">
   	    		</li>
               {% endfor %}
   	    	</ul>
