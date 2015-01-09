@@ -1,9 +1,10 @@
 ---
 title: Two Bedroom
 categories: rooms
-subtitle: 2 Persons
+subtitle: 4 persons
 section: twobedroom
 published: true
+order: 3
 low: "70€"
 medium: "80€"
 high: "100€"

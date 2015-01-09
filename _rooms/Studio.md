@@ -1,9 +1,10 @@
 ---
-title:  Studio
-date:   2014-07-03 21:40:10
+title: Studio
 categories: rooms
 subtitle: 2 Persons
 section: studio
+published: true
+order: 1
 low: "35€"
 medium: "40€"
 high: "50€"

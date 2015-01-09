@@ -1,4 +1,5 @@
-{% for room in site.rooms %}
+{% assign rooms = site.rooms | sort: 'order' %}
+{% for room in rooms %}
     <section id="{{ room.section }}"class="rooms {{ room.section }} ">
             <div class="rooms-inside">    
                 <h2 class="rooms-title" >{{ room.title }} </h2>

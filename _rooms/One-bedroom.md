@@ -2,9 +2,10 @@
 title: One Bedroom
 categories: rooms
 image: "https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg"
-subtitle: 2 Persons
+subtitle: 2 or 3 persons
 section: onebedroom
 published: true
+order: 2
 low: "45€"
 medium: "50€"
 high: "65€"

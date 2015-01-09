@@ -274,7 +274,8 @@ section {
     .reservation-right {
         @include span(5 at 6 of 12);
         input,
-            label {
+        select,
+        label {
                 @include span(6 at 6 of 12);
                 margin-bottom: 1em;
             }    
@@ -369,7 +370,6 @@ input[type="reset"], input[type="submit"] {
     @include push(7 of 12);
     @include span(2 of 12);
     margin-top: -425px;
-    height: 250px;
     position:absolute;    
     background-color: #88505a;
     padding-top: 30px;
