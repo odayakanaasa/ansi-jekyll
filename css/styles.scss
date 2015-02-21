@@ -1,8 +1,7 @@
 ---
 ---
 /* start content */
-@import "susy-config";
-@import "sass-components";
+@import "layout";
 @import "include-css.css";
 
 /* Compass mixins */
@@ -84,14 +83,7 @@ section {
 }
 
 .slideshow-message {
-    z-index: 2000;
-    height: 100%;
-    padding-left: 5px;
-    padding-right: 5px;
-    @include container;
         .slideshow-message-inside {        
-        position: absolute;
-        top: 8em;
         }
         h1 {
             font-family: 'Bebas Neue','Montserrat',Arial;
@@ -116,34 +108,29 @@ section {
 }
 
 
-.navigation .menu,
-.rooms-inside, 
-.reservation-inside,
-.site-footer .wrap {
-    @include container(70em);
-}
+
 
 .navigation {
-    background: #26292f;
-    opacity: 0.9;
-    width: 100%;
-    z-index: 5000;
         a {
             font-size: 1.5em;
             color: #ffffff;
             text-transform: uppercase;
-            padding: 5px 2em 5px 0em;
+            padding: 5px 1.5em 5px 0em;
             text-decoration: none;
             line-height: 45px;
         }
+        a:nth-last-child(1) {
+            padding-right:0;
+        }
       
 }
-
+.almyrida .rooms-inside .column-right table th {
+    padding: 20px 0;
+}
 .rooms-inside {
     padding-top: 6em;
     padding-bottom: 8em;
     .column-left {
-        @include span(10 of 16);
         .flexslider-rooms .flex-control-thumbs li {
             width: 62px;
             float: left;
@@ -157,10 +144,10 @@ section {
         padding: 5px;
         background: #fff;
         border: 1px solid #ddd;
+        width: 100%;
         }
     }
     .column-right {
-        @include span(6 last at 10 of 16);
             table {
                 -webkit-font-smoothing: antialiased;
                 font-size: 1.2em;
@@ -197,22 +184,14 @@ section {
         
     }
     .rooms-footer {
-            @include span(12 of 12); 
             .link-button {
             float: right;
             }
         }
 }
-.almyrida .rooms-inside .column-right table th {
-    padding: 20px 0;
-}
+
 .reviews-inside {
-    @include container;
-        padding-top: 6em;
-    padding-bottom: 8em;
     .review {
-        @include gallery(4 of 12);
-        margin-bottom: 30px;
         .review-inside {
             border: 1px #eee solid;
             padding: 20px;
@@ -252,55 +231,83 @@ section {
     .reservation-inside {
         padding-top: 6em;
         padding-bottom: 8em;
-    }
-    h2 {
-        font-size: 5em;        
-        margin-top: 0;
-        color: white;
-        padding-bottom: 0.5em;
-    }
-    label {
-        color: #ffffff;
-    }
-    .reservation-left {
-        @include span(6 of 12);
-        input,
-        select,
-        label{
-            @include span(6 of 12);
-            margin-bottom: 1em;
+        textarea, select, input[type="date"], 
+        input[type="email"], 
+        input[type="number"], input[type="text"] {
+            box-sizing: border-box;
+            background-clip: padding-box;
+            border-radius: 0;
+            background-color: white;
+            border: 1px solid;
+            border-color: none;
+            color: black;
+            outline: 0;
+            margin: 0;
+            padding: 2px 3px;
+            text-align: left;
+            height: 2.5em;
+            vertical-align: top;
         }
-    }
-    .reservation-right {
-        @include span(5 at 6 of 12);
-        input,
-        select,
+        input[type="submit"] {
+            border-radius: 0px;
+            background-clip: padding-box;
+            background-color: #f78c0d;
+            background-image: none;
+            border: none;
+            cursor: pointer;
+            color: #333333;
+            display: inline-block;
+            outline: 0;
+            overflow: visible;
+            margin: 0;
+            padding: 10px 45px;
+            text-shadow: none;
+            text-decoration: none;
+            vertical-align: top;
+        }
+        h2 {
+            font-size: 5em;        
+            margin-top: 0;
+            color: white;
+            padding-bottom: 0.5em;
+        }
         label {
-                @include span(6 at 6 of 12);
+            color: #ffffff;
+        }
+        .reservation-left {
+            input,
+            select,
+            label{
+                @include span(6 of 12);
                 margin-bottom: 1em;
-            }    
+            }
         }
-    .reservation-message {
-        @include span(12);
-        margin-bottom: 2em;
-        width: 100%;
-        label{
-            @include span(12);
-            margin-bottom: 1.2em;
-            width: 100%;
+        .reservation-right {
+            input,
+            select,
+            label {
+                    @include span(6 at 6 of 12);
+                    margin-bottom: 1em;
+                }    
+            }
+        .reservation-message {
+            label{
+                @include span(12);
+                margin-bottom: 1.2em;
+                width: 100%;
+            }
+            textarea {
+                height: 5em;
+                width: 100%;
+            }
         }
-        textarea {
-            height: 5em;
-            width: 100%;
+        .parsley-errors-list {
+            display: inline;
+            float: left;
+            background: #ECB34C;
+            padding: 0.5em 2em;
         }
     }
-    .parsley-errors-list {
-        display: inline;
-        float: left;
-        background: #ECB34C;
-        padding: 0.5em 2em;
-    }
-    
   }
 /* Reservatiion date Picker */
 .rd-container {
@@ -310,67 +317,8 @@ section {
     }
 }
 
-textarea, select, input[type="date"], 
-input[type="datetime"], 
-input[type="datetime-local"], 
-input[type="email"], input[type="month"], 
-input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    background-color: white;
-    border: 1px solid;
-    border-color: none;
-    color: black;
-    outline: 0;
-    margin: 0;
-    padding: 2px 3px;
-    text-align: left;
-    font-size: 18px;
-    font-family: Arial,"Liberation Sans",FreeSans,sans-serif;
-    height: 2.5em;
-    vertical-align: top;
-}
-input[type="reset"], input[type="submit"] {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
-    border-radius: 0px;
-    -webkit-background-clip: padding;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
-    background-color: #f78c0d;
-    background-image: none;
-    border: none;
-    cursor: pointer;
-    color: #333333;
-    display: inline-block;
-    font: bold 18px / 1.5 "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;
-    outline: 0;
-    overflow: visible;
-    margin: 0;
-    padding: 10px 45px;
-    text-shadow: none;
-    text-decoration: none;
-    vertical-align: top;
-    width: auto;
-}
+
 .contact {
-    @include push(7 of 12);
-    @include span(2 of 12);
-    margin-top: -425px;
-    position:absolute;    
     background-color: #88505a;
     padding-top: 30px;
     padding-right: 40px;
@@ -383,8 +331,7 @@ input[type="reset"], input[type="submit"] {
      }
     a {
       color: #fff;
-        text-decoration:none;
-
+      text-decoration:none;
     }
 }
 /* Footer */

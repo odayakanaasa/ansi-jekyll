@@ -1,0 +1,125 @@
+@import "sass-components";
+@import "susy-config";
+
+$mob: 250px 770px;
+$tablet: 780px;
+
+@media(min-width: 250px) and (max-width: 794px) {
+    .navigation .menu,
+    .rooms-inside, 
+    .reservation-inside,
+    .reservation-inside form,   
+    .site-footer .wrap {
+        @include container(25em);
+    }   
+    .navigation {
+        background: #26292f;
+        opacity: 0.9;
+        width: 100%;
+        z-index: 5000;
+    }
+    .rooms-inside {
+        padding-top: 6em;
+        padding-bottom: 8em;
+        .column-left {
+            @include span(16 of 16);
+            .flexslider-rooms .flex-control-thumbs li {
+                width: 62px;
+                float: left;
+                margin-right: 5px;
+            }
+        }
+        .column-right {
+            @include span(16 of 16);
+            margin-bottom: 2em;
+        }
+            .rooms-footer {
+                @include span(12 of 12); 
+            }
+    }
+    .reviews-inside {
+        @include container;
+        padding-top: 6em;
+        padding-bottom: 8em;
+        .review {
+            margin: 2em;
+            }
+    }
+    .contact {
+        @include container;
+        margin:0;
+    }
+}
+@media(min-width: 800px) {
+    .navigation .menu,
+    .rooms-inside, 
+    .reservation-inside,
+    .reservation-inside form,   
+    .site-footer .wrap {
+        @include container(70em);
+    }
+
+    .slideshow-message {
+        z-index: 2000;
+        height: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+        @include container;
+            .slideshow-message-inside {        
+            position: absolute;
+            top: 8em;
+            }
+    }
+
+    .navigation {
+        background: #26292f;
+        opacity: 0.9;
+        width: 100%;
+        z-index: 5000;
+    }
+    .rooms-inside {
+        padding-top: 6em;
+        padding-bottom: 8em;
+        .column-left {
+            @include span(10 of 16);
+            .flexslider-rooms .flex-control-thumbs li {
+                width: 62px;
+                float: left;
+                margin-right: 5px;
+            }
+        }
+        .column-right {
+            @include span(6 last at 10 of 16);
+            margin-bottom: 2em;
+        }
+            .rooms-footer {
+                @include span(12 of 12); 
+            }
+    }
+    .reviews-inside {
+        @include container;
+        padding-top: 6em;
+        padding-bottom: 8em;
+        .review {
+            @include gallery(4 of 12);
+            margin-bottom: 30px;
+            }
+    }
+    .reservation-left {
+                @include span(6 of 12);
+
+    }
+    .reservation-right {
+        @include span(5 at 6 of 12);
+
+    }
+    .reservation-message {
+        @include span(11 of 12);
+        margin-bottom: 2em;
+    }
+    .contact {
+        @include push(7 of 12);
+        margin-top: -425px;
+        position:absolute;    
+    }
+}
