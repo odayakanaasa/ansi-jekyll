@@ -130,8 +130,7 @@ section {
 .rooms-inside {
     padding-top: 6em;
     padding-bottom: 8em;
-    .column-left {
-        .flexslider-rooms .flex-control-thumbs li {
+    .flexslider-rooms .flex-control-thumbs li {
             width: 62px;
             float: left;
             margin-right: 5px;
@@ -146,43 +145,40 @@ section {
         border: 1px solid #ddd;
         width: 100%;
         }
-    }
-    .column-right {
-            table {
+     table {
                 -webkit-font-smoothing: antialiased;
                 font-size: 1.2em;
                 width: 100%;
                 float: left;
                 margin-right: 1.26582%;
                 text-align: center;
-            }
-            table th {
+            
+             th {
                 background-color: #70c469;
                 font-weight: normal;
                 color: #6f6f6f;
                 padding: 20px 0 0 0;
                 text-align: center;
                 }
-            table tr td {
+             tr td {
                 background-color: #eeeeee;
                 padding: 20px 10px;
                 color: #6f6f6f;
                 text-align: center;
                 }
-            table tr td.row_1 {
+             tr td.row_1 {
                 background-color: #70c469;
                 padding: 5px 10px 0 10px;
                 font-size: .8em;
                 color: #ddd;
                 }
-            table tr td.row_2{
+             tr td.row_2{
                 background-color: #70c469;
                 padding: 0 10px 20px 0;
                 font-size: .8em;
                 color: #ddd;
                 }
-        
-    }
+            }
     .rooms-footer {
             .link-button {
             float: right;
@@ -222,6 +218,9 @@ section {
 }
 .reviews {
     background: #cccccc;
+    h2 {
+        margin-bottom: 0.5em;
+    }
 }
 .reservation {
     background: #41505E;

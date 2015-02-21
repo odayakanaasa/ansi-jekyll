@@ -81,7 +81,7 @@ $tablet: 780px;
         padding-top: 6em;
         padding-bottom: 8em;
         .column-left {
-            @include span(10 of 16);
+            @include span(6 of 12);
             .flexslider-rooms .flex-control-thumbs li {
                 width: 62px;
                 float: left;
@@ -89,7 +89,7 @@ $tablet: 780px;
             }
         }
         .column-right {
-            @include span(6 last at 10 of 16);
+            @include span(6 last of 12);
             margin-bottom: 2em;
         }
             .rooms-footer {

@@ -4,9 +4,8 @@
             <div class="rooms-inside">    
                 <h2 class="rooms-title" >{{ room.title }} </h2>
                 <h4 class="rooms-subtitle" >{{ room.subtitle }} </h4>
-                <div class="column-left">
-                     <div class="rooms-img">
-                        <div class="flexslider-rooms">
+                <div class="rooms-img">
+                       <div class="flexslider-rooms">
                           <ul class="slides">                              
                               {% capture appartment %} {{ room.section }} {% endcapture %}
                               {% for image in site.data.[room.section] %}                             
@@ -17,13 +16,14 @@
                                {% endfor %}
                           </ul>
                         </div>
+                <div class="column-left">
+                      <div class="rooms-description"> {{ room.content }} </div>
+                     
+                    
                     </div>
                 </div>
-                <div class="column-right">
-                    
-                    <div class="rooms-description"> {{ room.content }} </div>
-                    
-                   <table class="prices">
+                <div class="column-right">           
+                     <table class="prices">
                        <thead>
                            <tr>
                            <th class="row_0 col_0">Low Season</th>
@@ -51,9 +51,11 @@
                         </tr> 
                            </tbody>
                     </table>
+                  
                    
                 </div>
             <div class="rooms-footer">
+                
                  <div class="link-button"><a href="#reservation" class="button  button-flat button-primary">
                         <i class="icon-chevron-right"></i>Ask the owner</a></div>
                 </div>

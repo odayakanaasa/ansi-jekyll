@@ -1,8 +1,10 @@
-- src: "slideshow_1.jpg"
+- src: "slideshow_01.jpg"
   alt: ""
   
-- src: "slideshow_0.jpg"
+- src: "slideshow_00.jpg"
   alt: ""
 
-- src: "slideshow.jpg"
+- src: "slideshow_03.jpg"
   alt: ""
+
+- src: "slideshow_02.jpg"
