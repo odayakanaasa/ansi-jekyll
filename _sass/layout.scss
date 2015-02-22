@@ -51,14 +51,20 @@ $tablet: 780px;
     }
 }
 @media(min-width: 800px) {
+    .offer-wrapper {
+        @include full;
+    }
     .navigation .menu,
     .rooms-inside, 
     .reservation-inside,
     .reservation-inside form,   
-    .site-footer .wrap {
+    .site-footer .wrap,
+    .offer {
         @include container(70em);
     }
-
+    .slider {
+        margin-top: 51px;
+    }
     .slideshow-message {
         z-index: 2000;
         height: 100%;
@@ -68,6 +74,7 @@ $tablet: 780px;
             .slideshow-message-inside {        
             position: absolute;
             top: 8em;
+              
             }
     }
 
