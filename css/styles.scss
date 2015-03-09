@@ -69,9 +69,7 @@ p {
     line-height: 1.4em;
     margin-bottom:0.5em;
 }
-section {
-    @include full;
-}
+
 .flexslider {
     margin: 0;
     background: #fff;
@@ -114,19 +112,24 @@ section {
 
 
 
-.navigation {
-        a {
-            font-size: 1.2em;
-            color: #ffffff;
-            text-transform: uppercase;
-            padding: 5px 1.5em 5px 0em;
-            text-decoration: none;
-            line-height: 45px;
-        }
-        a:nth-last-child(1) {
-            padding-right:0;
-        }
-      
+.menu-wrapper{
+    @include full;
+    opacity: 0.9;
+    background: #26292f;
+    .menu {
+            a {
+                font-size: 1.2em;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding: 5px 1.5em 5px 0em;
+                text-decoration: none;
+                line-height: 45px;
+            }
+            a:nth-last-child(1) {
+                padding-right:0;
+            }
+
+    }
 }
 .almyrida .rooms-inside .column-right table th {
     padding: 20px 0;
@@ -352,9 +355,9 @@ section {
 /* Offer */
 /*  */
 .offer-wrapper {
-    position: absolute;
+/*     position: absolute;
     top: 0;
-    z-index: 5;
+    z-index: 5; */
     background: #7BA8C2;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
     .offer{

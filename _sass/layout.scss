@@ -4,6 +4,10 @@
 $mob: 250px 770px;
 $tablet: 780px;
 
+section {
+    @include full;
+    
+}
 @media(min-width: 250px) and (max-width: 794px) {
     .navigation .menu,
     .rooms-inside, 
@@ -51,6 +55,7 @@ $tablet: 780px;
     }
 }
 @media(min-width: 800px) {
+    
     .offer-wrapper {
         @include full;
     }
@@ -61,9 +66,6 @@ $tablet: 780px;
     .site-footer .wrap,
     .offer {
         @include container(70em);
-    }
-    .slider {
-        margin-top: 51px;
     }
     .slideshow-message {
         z-index: 2000;
@@ -79,8 +81,6 @@ $tablet: 780px;
     }
 
     .navigation {
-        background: #26292f;
-        opacity: 0.9;
         width: 100%;
         z-index: 5000;
     }
@@ -88,7 +88,7 @@ $tablet: 780px;
         padding-top: 6em;
         padding-bottom: 8em;
         .column-left {
-            @include span(6 of 12);
+            @include span(9 of 16);
             .flexslider-rooms .flex-control-thumbs li {
                 width: 62px;
                 float: left;
@@ -96,7 +96,7 @@ $tablet: 780px;
             }
         }
         .column-right {
-            @include span(6 last of 12);
+            @include span(6 last of 16);
             margin-bottom: 2em;
         }
             .rooms-footer {

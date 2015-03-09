@@ -1,7 +1,10 @@
 <div class="navigation">
-    <div class="menu">
-       {% for menu in site.data.menu %} 
-        <a  href="#{{ menu.href }}" >{{ menu.title }}</a>
-       {% endfor %}
-    </div>
+        {% include offer.html %} 
+    <div class="menu-wrapper">
+        <div class="menu">
+           {% for menu in site.data.menu %} 
+            <a  href="#{{ menu.href }}" >{{ menu.title }}</a>
+           {% endfor %}
+        </div>
+        </div>
   </div>
