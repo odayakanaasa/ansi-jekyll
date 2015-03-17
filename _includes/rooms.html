@@ -9,10 +9,10 @@
                         <div class="flexslider-rooms">
                           <ul class="slides">                              
                               {% capture appartment %} {{ room.section }} {% endcapture %}
-                              {% for image in site.data.[room.section] %}                             
-                                <li data-thumb="{{ image.src | prepend: 'assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
+                              {% for image in room.images %}                             
+                                <li data-thumb="{{ image.image | prepend: 'assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
                                     {{ image.section }}
-                                  <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.src | prepend: 'assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
+                                  <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.image | prepend: 'assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
                                 </li>
                                {% endfor %}
                           </ul>
@@ -26,30 +26,33 @@
                    <table class="prices">
                        <thead>
                            <tr>
-                           <th class="row_0 col_0">Low Season</th>
-                           <th class="row_0 col_1">Medium Season</th>
-                           <th class="row_0 col_2">High Season</th> 
+                               {% for season in site.data.season.seasons.season %}
+                                   <th class="row_0">{{ season.title }}</th>
+                               {% endfor %}
                            </tr>
                        </thead>
-                       <tbody>
-                       <tr>
-                          
-                           <td class="row_1 col_0">1 Apr - 31 May</td>
-                           <td class="row_1 col_1">1 - 30 Jun </td>
-                           <td class="row_1 col_2">1 Jul - 31 Aug </td>
-                        
-                       </tr>
-                         <tr>                          
-                           <td class="row_2 col_0">1 - 31 Oct </td>
-                           <td class="row_2 col_1">1 - 30 Sept </td>
-                             <td class="row_2 col_2"></td>
-                       </tr>   
-                       <tr>
-                       <td> {{ room.low }} </td>
-                       <td> {{ room.medium }} </td>
-                       <td> {{ room.high }} </td>
-                        </tr> 
-                           </tbody>
+                           <tbody>
+                               <tr class="row1">
+                                {% for season in site.data.season.seasons.season %}
+                                 
+                              <td class="row_1">
+                                   {% for date in site.data.season.seasons.dates.[season.season] %}
+                                     
+                                         
+                                             {{ date.row }}<br>
+                                         
+                                        
+                                    {% endfor %}
+                               </td>
+
+                                 {% endfor %}
+                                   </tr>
+                           <tr>
+                               <td> {{ room.low }} </td>
+                               <td> {{ room.medium }} </td>
+                               <td> {{ room.high }} </td>
+                            </tr> 
+                               </tbody>
                     </table>
                    
                 </div>

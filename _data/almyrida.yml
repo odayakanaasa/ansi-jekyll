@@ -1,8 +1,13 @@
-- src: outer01.jpg
-- src: outer02.jpg
-- src: outer03.jpg
-- src: outer04.jpg
-- src: outer05.jpg
-- src: outer06.jpg
-- src: outer07.jpg
-- src: outer08.jpg
+almyrida:
+ title: "Ansi-Almyrida"
+ subtitle: "enjoy magnificent views from your balcony"
+ image:
+  - src: outer01.jpg
+  - src: outer02.jpg
+  - src: outer03.jpg
+  - src: outer04.jpg
+  - src: outer05.jpg
+  - src: outer06.jpg
+  - src: outer07.jpg
+  - src: outer08.jpg
+ text: "Ansi apartments are built in the picturasque village of Almyrida. Almyrida is located at the entrance of Souda Bay and is a small scenic fisherman's village. Ansi apartments are conviniently located 500m from Almyrida centre and just 70 steps to the beach, offering a tranquil environment for relaxation, as well as magnificent views and romantic sunsets from your balcony.."

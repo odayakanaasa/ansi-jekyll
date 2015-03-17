@@ -1,10 +1,11 @@
-- src: "slideshow_01.jpg"
-  alt: ""
-  
-- src: "slideshow_00.jpg"
-  alt: ""
-
-- src: "slideshow_03.jpg"
-  alt: ""
-
-- src: "slideshow_02.jpg"
+slideshow:
+ title: "Ansi-Almyrida"
+ subtitle: "enjoy magnificent views from your balcony"
+ images:
+  - src: "slideshow_01.jpg"
+    alt: ""  
+  - src: "slideshow_00.jpg"
+    alt: ""
+  - src: "slideshow_03.jpg"
+    alt: ""
+  - src: "slideshow_02.jpg"

@@ -11,3 +11,5 @@
 // Custom - settings
 {% include js/flexslider-settings.js  %}
 {% include js/rome-settings.js  %}
+{% include js/menu-fixed.js  %}
+{% include js/confirmation-message.js  %}

@@ -1,20 +1,21 @@
  <section class="slider">
         <div class="flexslider">
           <ul class="slides">
-              {% for image in site.data.slideshow %} 
+              {% for image in site.data.slideshow.slideshow.images %} 
             <li>
   	    	     <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.src | prepend: 'assets/'  | prepend: site.baseurl | prepend: site.url}} " height="400px">
   	    		</li>
               {% endfor %}
   	    	</ul>
         </div>
+     
+        <div class="slideshow-message">
+            <div class="slideshow-message-inside">
+                    <h1 class="slideshow-title">{{ site.data.slideshow.slideshow.title }}</h1>
+                    <h3 class="slideshow-subtitle">{{ site.data.slideshow.slideshow.subtitle }}</h3>
+                </div>
+         </div>
       </section>
 
-    <div class="slideshow-message">
-        <div class="slideshow-message-inside">
-                <h1 class="slideshow-title">STAY IN ANSI APARTMENTS</h1>
-                <h3 class="slideshow-subtitle">Explore Crete, enjoy the sun, stay in Almyrida!</h3>
-            </div>
-     </div>
 
 

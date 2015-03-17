@@ -1,14 +1,14 @@
  <section id="almyrida"class="almyrida">
             <div class="rooms-inside">    
-                <h2 class="rooms-title" >ANSI - ALMYRIDA </h2>
-                <h4 class="rooms-subtitle" >ENJOY MAGNIFICENT VIEWS FROM YOUR BALCONY</h4>
+                <h2 class="rooms-title" >{{ site.data.almyrida.almyrida.title }}</h2>
+                <h4 class="rooms-subtitle" >{{ site.data.almyrida.almyrida.subtitle }}</h4>
                 <div class="column-left">
                      <div class="rooms-img">
                         <div class="flexslider-rooms">
                           <ul class="slides">
-                              {% for image in site.data.almyrida %}
+                              {% for image in site.data.almyrida.almyrida.image %}
                             <li data-thumb="{{ image.src | prepend: 'assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
-                              <img src="{{ image.src | prepend: 'assets/' | prepend: site.baseurl | prepend: site.url }}" />
+                              <img class="lazy" src="{{ image.src | prepend: 'assets/' | prepend: site.baseurl | prepend: site.url }}" />
                             </li>
                               {% endfor %}
                           </ul>
@@ -18,27 +18,20 @@
                 <div class="column-right">
                     
                     <div class="rooms-description"> 
-                        <p>
-                        Ansi apartments are built in the picturasque village of Almyrida. Almyrida is located at the entrance of Souda Bay and is a small scenic
-
-fisherman's village. Ansi apartments are conviniently located 500m from Almyrida centre and just 70 steps to the beach, offering
-
-a tranquil environment for relaxation, as well as magnificent views and romantic sunsets from your balcony..</p>
+                            <p> {{ site.data.almyrida.almyrida.text }}</p>
                     </div>
                     
                    <table class="rooms">
                        <thead>
-                           <tr>
-                           <th class="row_0 col_0">Studio</th>
-                           <th class="row_0 col_1">One Bedroom</th>
-                           <th class="row_0 col_2">Two Bedroom</th> 
-                           </tr>
+                           {% tablerow room in site.rooms %}
+                             {{ room.title }}
+                           {% endtablerow %}
                        </thead>
                        <tbody>                     
                          <tr>                          
-                           <td >from 30€ </td>
-                           <td >from 45€  </td>
-                            <td>from 70€ </td>
+                            <td>{{ site.data.season.seasons.pricesfrom.low }}</td>
+                             <td>{{ site.data.season.seasons.pricesfrom.medium }}</td>
+                             <td>{{ site.data.season.seasons.pricesfrom.high }}</td>                            
                        </tr>   
                            </tbody>
                     </table>

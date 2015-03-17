@@ -1,18 +1,21 @@
 <section id="reservation" class="reservation">
     <div class="reservation-inside">
       <h2 class="reservation-title" >Reservation</h2>
-        <form action="http://getsimpleform.com/messages?form_api_token=61cdf75d210a898a9c2caa21d0791ab8" method="post" data-parsley-validate>
+        <div class="success-message">
+            <h1>Thank you! We will get back to you to confirm your reservation!</h1>
+        </div>
+        <form id="reservation-form" data-parsley-validate>
           <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-          <input type='hidden' name='redirect_to' value='http://alpine-lierne.codio.io:4000/thankyou' />
+          <input type='hidden' name='redirect_to' />
           <!-- all your input fields here.... -->
            <div class="reservation-left">
               <label>Check in *</label>
-                <input  type='text' id="checkin" class='input' required >
+                <input  type='text' id="checkin" class='input' name='Checkin' required>
                
               <label>Name *</label>
                   <input type='text' name='Name' placeholder="Name" required>
               <label>Room Type *</label>
-                   <select id="edit-submitted-room-type" name="submitted[room_type]" class="form-select required" required>
+                   <select id="edit-submitted-room-type" name="RoomType" class="form-select required" required>
                    <option value="" selected="selected">- Select -</option>
                    <option value="1">Studio</option>
                    <option value="2">One bedroom apartment</option>
@@ -21,12 +24,12 @@
              </div>
             <div class="reservation-right">            
                 <label>Check out *</label>
-                    <input type='text' id="checkout" class='input' required>
+                    <input type='text' id="checkout" class='input' name='Checkout' required>
               
                 <label>Email *</label>
                     <input type='email' name='Email' placeholder="youremail@email.com" data-parsley-trigger="change"  data-parsley-type="email" required>
                 <label>Persons *</label>
-                 <select id="edit-submitted-persons" name="submitted[persons]" class="form-select required" required>
+                 <select id="edit-submitted-persons" name="Persons" class="form-select required" required>
                    <option value="" selected="selected">- Select -</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -38,7 +41,7 @@
             </div>
              <div  class="reservation-message">
              <label>Message</label>
-                   <textarea id="edit-submitted-message" name="submitted[message]" cols="150" rows="5" class="form-textarea"></textarea>
+                   <textarea id="edit-submitted-message" name="Message" cols="150" rows="5" class="form-textarea"></textarea>
             </div>
             <div class="reservation-right">  
               <input type='submit' value='Send'>

@@ -1,0 +1,3 @@
+---
+layout: thankyou
+---

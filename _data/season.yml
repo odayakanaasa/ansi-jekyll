@@ -1,13 +1,24 @@
-- low:
-    row-1: 1 Apr - 31 May
-    row-2: 1 - 31 Oct
+seasons:
+ season:
+    - season: low
+      title: "Low Season"
+    - season: medium
+      title: "Medium Season"
+    - season: high
+      title: "High Season"
+ dates:
+   low:
+     - row: 1 Apr - 31 May
+     - row: 1 - 31 Oct    
+   medium:
+     - row: 1 - 30 Jun
+     - row: 1 - 30 Sept    
+   high: 
+     - row: 1 Jul - 31 Aug
+ pricesfrom:
+   low: "from 30€"
+   medium: "from 45€"
+   high: "from 70€"
     
-- medium:
-    row-1: 1 - 30 Jun
-    row-2: 1 - 30 Sept
-    
-- high: 
-    row-1: 1 Jul - 31 Aug
-
 
 
