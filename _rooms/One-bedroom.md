@@ -11,14 +11,9 @@ high: "65€"
 images:
   - image: one_bedroom01.jpg
   - image: one_bedroom02.jpg
-  - image: one_bedroom03.jpg
-  - image: one_bedroom03.jpg
   - image: one_bedroom04.jpg
   - image: one_bedroom05.jpg
-  - image: one_bedroom06.jpg
   - image: one_bedroom07.jpg
-  - image: one_bedroom08.jpg
-  - image: one_bedroom09.jpg
   - image: one_bedroom10.jpg
   - image: one_bedroom11.jpg
   - image: one_bedroom12.jpg
