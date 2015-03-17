@@ -163,23 +163,42 @@ p {
 /*  */
 /* Menu */
 /*  */
-.menu-wrapper{
+.menu-wrapper,
+.mobile-menu {
     @include full;
     opacity: 0.9;
     background: #26292f;
+    #responsive-menu-button {
+        margin-left: 5px;
+          color: #fff;
+          background: #444;
+          padding: 10px 10px 8px;
+          font-family: Arial, sans-serif;
+          font-size: 0.6875em;
+    }
     .menu {
+        ul {
+            float: left;
+            padding: 0;
+            margin: 0;
+            }
+        li {
+            float: left;
+            list-style: none;
+            display: inline;
+            padding: 5px 1.5em 5px 0em;
             a {
                 font-size: 1.2em;
                 color: #ffffff;
                 text-transform: uppercase;
-                padding: 5px 1.5em 5px 0em;
+                
                 text-decoration: none;
                 line-height: 45px;
             }
             a:nth-last-child(1) {
                 padding-right:0;
             }
-
+        }         
     }
 }
 /*  */
@@ -189,8 +208,6 @@ p {
     padding: 20px 0;
 }
 .rooms-inside {
-    padding-top: 6em;
-    padding-bottom: 8em;
     .flexslider-rooms .flex-control-thumbs li {
             width: 62px;
             float: left;
@@ -268,8 +285,6 @@ p {
 /*  */
 .reservation {
     .reservation-inside {
-        padding-top: 6em;
-        padding-bottom: 8em;
         textarea, select, input[type="date"], 
         input[type="email"], 
         input[type="number"], input[type="text"] {
