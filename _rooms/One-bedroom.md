@@ -8,6 +8,7 @@ order: 2
 low: "45€"
 medium: "50€"
 high: "65€"
+prices-from: "from 45€"
 images:
   - image: one_bedroom01.jpg
   - image: one_bedroom02.jpg

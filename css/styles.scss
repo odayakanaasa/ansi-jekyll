@@ -230,16 +230,15 @@ p {
                 float: left;
                 margin-right: 1.26582%;
                 text-align: center;
-            
-             th,
-            .row1 td {
+            th,
+            thead td {
                 background-color: #70c469;
                 font-weight: normal;
                 color: #6f6f6f;
                 padding: 20px 0 0 0;
                 text-align: center;
                 }
-             tr td {
+             tbody tr td {
                 background-color: #eeeeee;
                 padding: 20px 10px;
                 color: #6f6f6f;

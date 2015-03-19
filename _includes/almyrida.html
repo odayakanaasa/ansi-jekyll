@@ -23,16 +23,15 @@
                     
                    <table class="rooms">
                        <thead>
-                           {% tablerow room in site.rooms %}
+                           {% assign rooms = site.rooms | sort: 'order' %}
+                           {% tablerow room in rooms %}
                              {{ room.title }}
                            {% endtablerow %}
                        </thead>
                        <tbody>                     
-                         <tr>                          
-                            <td>{{ site.data.season.seasons.pricesfrom.low }}</td>
-                             <td>{{ site.data.season.seasons.pricesfrom.medium }}</td>
-                             <td>{{ site.data.season.seasons.pricesfrom.high }}</td>                            
-                       </tr>   
+                           {% tablerow room in rooms %}
+                             {{ room.prices-from }}
+                           {% endtablerow %}
                            </tbody>
                     </table>
                    
