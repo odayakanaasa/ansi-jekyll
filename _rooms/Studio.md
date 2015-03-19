@@ -8,7 +8,7 @@ order: 1
 low: "35€"
 medium: "40€"
 high: "50€"
-prices-from: "from 45€"
+prices-from: "from 35€"
 images:
   - image: studio01.jpg
   - image: studio02.jpg
