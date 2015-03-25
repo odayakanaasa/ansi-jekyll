@@ -10,26 +10,26 @@
           <!-- all your input fields here.... -->
            <div class="reservation-left">
               <label>Check in *</label>
-                <input  type='text' id="checkin" class='input' name='Checkin' required>
+                <input  type='text' id="checkin" class='input' name='checkin' required>
                
               <label>Name *</label>
-                  <input type='text' name='Name' placeholder="Name" required>
+                  <input type='text' name='name' placeholder="Name" required>
               <label>Room Type *</label>
-                   <select id="edit-submitted-room-type" name="RoomType" class="form-select required" required>
+                   <select id="edit-submitted-room-type" name="roomtype" class="form-select required" required>
                    <option value="" selected="selected">- Select -</option>
-                   <option value="1">Studio</option>
-                   <option value="2">One bedroom apartment</option>
-                   <option value="3">Two bedroom apartment</option>
+                   <option value="studio">Studio</option>
+                   <option value="one bedroom">One bedroom apartment</option>
+                   <option value="teo bedroom">Two bedroom apartment</option>
                     </select>
              </div>
             <div class="reservation-right">            
                 <label>Check out *</label>
-                    <input type='text' id="checkout" class='input' name='Checkout' required>
+                    <input type='text' id="checkout" class='input' name='checkout' required>
               
                 <label>Email *</label>
-                    <input type='email' name='Email' placeholder="youremail@email.com" data-parsley-trigger="change"  data-parsley-type="email" required>
+                    <input type='email' name='email' placeholder="youremail@email.com" data-parsley-trigger="change"  data-parsley-type="email" required>
                 <label>Persons *</label>
-                 <select id="edit-submitted-persons" name="Persons" class="form-select required" required>
+                 <select id="edit-submitted-persons" name="persons" class="form-select required" required>
                    <option value="" selected="selected">- Select -</option>
                    <option value="1">1</option>
                    <option value="2">2</option>
@@ -41,7 +41,7 @@
             </div>
              <div  class="reservation-message">
              <label>Message</label>
-                   <textarea id="edit-submitted-message" name="Message" cols="150" rows="5" class="form-textarea"></textarea>
+                   <textarea id="edit-submitted-message" name="message" cols="150" rows="5" class="form-textarea"></textarea>
             </div>
             <div class="reservation-right">  
               <input type='submit' value='Send'>

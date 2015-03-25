@@ -5,7 +5,7 @@ $("#reservation-form").submit(function() {
             if ($(this).parsley().isValid()) {
                 $.ajax({
                     dataType: 'jsonp',
-                    url: "http://getsimpleform.com/messages/ajax?form_api_token=61cdf75d210a898a9c2caa21d0791ab8",
+                    url: "http://getsimpleform.com/messages/ajax?form_api_token=ccc68879c9e9c7ab2b01502126346636",
                     data: $('#reservation-form').serialize() 
                 }).done(function() {
                     //callback which can be used to show a thank you message
