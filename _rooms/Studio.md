@@ -5,10 +5,11 @@ subtitle: 2 Persons
 section: studio
 published: true
 order: 1
-low: "35€"
-medium: "40€"
+low: "30€"
+medium1: "40€"
+medium2: "45€"
 high: "50€"
-prices-from: "from 35€"
+prices-from: "from 30€"
 images:
   - image: studio01.jpg
   - image: studio02.jpg

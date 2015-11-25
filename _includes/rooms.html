@@ -32,26 +32,12 @@
                            </tr>
                        </thead>
                            <tbody>
-                               <tr class="row1">
-                                {% for season in site.data.season.seasons.season %}
-                                 
-                              <td class="row_1">
-                                   {% for date in site.data.season.seasons.dates.[season.season] %}
-                                     
-                                         
-                                             {{ date.row }}<br>
-                                         
-                                        
-                                    {% endfor %}
-                               </td>
-
-                                 {% endfor %}
-                                   </tr>
-                           <tr>
-                               <td> {{ room.low }} </td>
-                               <td> {{ room.medium }} </td>
-                               <td> {{ room.high }} </td>
-                            </tr> 
+                                 <tr>
+                                     <td> {{ room.low }} </td>
+                                     <td> {{ room.medium1 }} </td>
+                                     <td> {{ room.high }} </td>
+                                    <td> {{ room.medium2 }} </td>
+                                  </tr> 
                                </tbody>
                     </table>
                    

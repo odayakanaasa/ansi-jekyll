@@ -1,11 +1,13 @@
 seasons:
  season:
     - season: low
-      title: "Low Season"
-    - season: medium
-      title: "Medium Season"
+      title: "April - May - October "
+    - season: medium1
+      title: "June"
     - season: high
-      title: "High Season"
+      title: "July - August"
+    - season: medium2
+      title: "September"  
  dates:
    low:
      - row: 1 Apr - 31 May
