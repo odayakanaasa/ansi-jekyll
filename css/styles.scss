@@ -230,12 +230,13 @@ p {
                 float: left;
                 margin-right: 1.26582%;
                 text-align: center;
+                table-layout: fixed;
             th,
             thead td {
                 background-color: #70c469;
                 font-weight: normal;
                 color: #6f6f6f;
-                padding: 20px 0 0 0;
+                padding: 20px 0;
                 text-align: center;
                 }
              tbody tr td {
