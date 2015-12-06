@@ -1,11 +1,15 @@
 seasons:
  season:
     - season: low
-      title: "April - May - October "
+      title: | 
+       April - May 
+       October
     - season: medium1
       title: "June"
     - season: high
-      title: "July - August"
+      title: | 
+       July <br>
+       August
     - season: medium2
       title: "September"  
  dates:
