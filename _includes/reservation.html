@@ -4,7 +4,10 @@
         <div class="success-message">
             <h1>Thank you! We will get back to you to confirm your reservation!</h1>
         </div>
-        <form id="reservation-form" data-parsley-validate>
+       <div class="error-message">
+          <h1>Unfortunately tour reservation is not submitted!</h1>
+        </div>
+        <form id="reservation-form" name="reservation-form" data-parsley-validate>
           <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
           <input type='hidden' name='redirect_to' />
           <!-- all your input fields here.... -->

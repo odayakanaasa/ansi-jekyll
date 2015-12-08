@@ -302,6 +302,15 @@ p {
             height: 2.5em;
             vertical-align: top;
         }
+       .error-message {
+            display: none;
+            background: #FF4343;
+            padding: 1em;
+            margin: 1em 0 2em;
+            h1 {
+                font-family: 'PT Sans';
+            }
+       }
         .success-message {
             display: none;
             background: #DAC03D;
