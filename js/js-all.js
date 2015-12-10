@@ -8,7 +8,6 @@
 {% include bower_components/rome/dist/rome.min.js  %}
 // <!-- Parsley Validator -->
 {% include bower_components/parsleyjs/dist/parsley.min.js  %}
-{% include js/confirmation-message.js  %}
 // Custom - settings
 {% include js/flexslider-settings.js  %}
 {% include js/rome-settings.js  %}
