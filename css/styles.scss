@@ -350,7 +350,7 @@ p {
         }
         .reservation-left {
             input,
-            select,
+            .form-select ,
             label{
                 @include span(6 of 12);
                 margin-bottom: 1em;
@@ -358,7 +358,7 @@ p {
         }
         .reservation-right {
             input,
-            select,
+            .form-select ,
             label {
                     @include span(6 at 6 of 12);
                     margin-bottom: 1em;

@@ -2,8 +2,6 @@
 ---
 /* <!-- Flexslider CSS --> */
 {% include bower_components/flexslider/flexslider.css %}
-/* <!--  Rome --> */
-{% include bower_components/rome/dist/rome.min.css %}
 /* Pasley */
 {% include bower_components/parsleyjs/src/parsley.css %}
 /* Sidr-menu */

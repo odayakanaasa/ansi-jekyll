@@ -1,4 +1,4 @@
-   /*var moment = rome.moment().add( 0 , 'days');
+   var moment = rome.moment().add( 0 , 'days');
    var tomorrow = rome.moment().add( 2 ,'days');
 
    rome(checkin, { 
@@ -14,6 +14,4 @@
       monthsInCalendar: 2,
       dateValidator: rome.val.afterEq(checkin),
       initialValue: rome.moment(checkin).add( 1 ,'day')
-   });*/
-$('#checkin').pickadate();
-$('#checkout').pickadate();
+   });
