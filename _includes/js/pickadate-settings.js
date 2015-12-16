@@ -1,5 +1,5 @@
 $('#checkin').pickadate({
-   format: 'dd/mm/yyyy',
+    format: 'dd/mm/yyyy',
     selectMonths: true, /* Creates a dropdown to control month */
     selectYears: +2,  /* Creates a dropdown of 15 years to control year */
     min: true,
@@ -10,7 +10,7 @@ $('#checkout').pickadate({
     format: 'dd/mm/yyyy',
     selectMonths: true, /* Creates a dropdown to control month */
     selectYears: +2, /*  Creates a dropdown of 15 years to control year */
-    min: + 1,
+    min: + 2,
     close: 'Done'
 });
 

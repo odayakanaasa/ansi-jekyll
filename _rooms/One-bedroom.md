@@ -22,5 +22,5 @@ images:
 ---
 
 One bedroom Apartments are suitable for 2 or 3 persons. 
-There are 2 small apartments offering a living room with kitchen and refrigerator, a bedroom, with double or two single beds and bath. 
+There are 2 apartments offering a living room with kitchen and refrigerator, a bedroom, with double or two single beds and a bathroom. 
 Each one has its own balcony overlooking Souda Bay. All apartments have air condition and refrigerator.
