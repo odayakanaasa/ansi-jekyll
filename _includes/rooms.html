@@ -10,9 +10,9 @@
                           <ul class="slides">                              
                               {% capture appartment %} {{ room.section }} {% endcapture %}
                               {% for image in room.images %}                             
-                                <li data-thumb="{{ image.image | prepend: 'assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
+                                <li data-thumb="{{ image.image | prepend: '/assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
                                     {{ image.section }}
-                                  <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.image | prepend: 'assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
+                                  <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.image | prepend: '/assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
                                 </li>
                                {% endfor %}
                           </ul>
