@@ -7,7 +7,7 @@
                         <div class="flexslider-rooms">
                           <ul class="slides">
                               {% for image in site.data.almyrida.almyrida.image %}
-                            <li data-thumb="{{ image.src | prepend: 'assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
+                            <li data-thumb="{{ image.src | prepend: '/assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
                               <img class="lazy" src="{{ image.src | prepend: '/assets/' | prepend: site.baseurl | prepend: site.url }}" />
                             </li>
                               {% endfor %}
