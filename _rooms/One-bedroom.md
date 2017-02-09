@@ -5,9 +5,9 @@ subtitle: 2 or 3 persons
 section: onebedroom
 published: true
 order: 2
-low: "40€"
-medium1: "50€"
-medium2: "55€"
+low: "45€"
+medium1: "55€"
+medium2: "60€"
 high: "70€"
 prices-from: "from 40€"
 images:
