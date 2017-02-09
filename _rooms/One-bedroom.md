@@ -9,7 +9,7 @@ low: "45€"
 medium1: "55€"
 medium2: "60€"
 high: "70€"
-prices-from: "from 40€"
+prices-from: "from 45€"
 images:
   - image: one_bedroom01.jpg
   - image: one_bedroom02.jpg
