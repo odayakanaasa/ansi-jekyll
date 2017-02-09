@@ -5,11 +5,11 @@ subtitle: 4 persons
 section: twobedroom
 published: true
 order: 3
-low: "70€"
-medium1: "75€"
+low: "80€"
+medium1: "80€"
 medium2: "85€"
 high: "100€"
-prices-from: "from 70€"
+prices-from: "from 80€"
 images:
   - image: two_bedroom01.jpg
   - image: two_bedroom02.jpg
