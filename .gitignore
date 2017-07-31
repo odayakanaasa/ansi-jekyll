@@ -1,2 +1,5 @@
-_site
-.sass-cache
+node_modules
+_site/
+.sass-cache/
+.jekyll-metadata
+_resources/bower/bower_components
