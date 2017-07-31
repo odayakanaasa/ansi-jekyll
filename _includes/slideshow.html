@@ -3,16 +3,15 @@
           <ul class="slides">
               {% for image in site.data.slideshow.slideshow.images %} 
             <li>
-  	    	     <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.src | prepend: '/assets/'| prepend: site.baseurl | prepend: site.url}} " height="400px">
+  	    	     <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.src | prepend: '/assets/'| prepend: site.baseurl | prepend: site.url}}" >
   	    		</li>
               {% endfor %}
   	    	</ul>
         </div>
-     
         <div class="slideshow-message">
             <div class="slideshow-message-inside">
-                    <h1 class="slideshow-title">{{ site.data.slideshow.slideshow.title }}</h1>
-                    <h3 class="slideshow-subtitle">{{ site.data.slideshow.slideshow.subtitle }}</h3>
+                    <div class="slideshow-title">{{ site.data.slideshow.slideshow.title }}</div>
+                    <div class="slideshow-subtitle">{{ site.data.slideshow.slideshow.subtitle }}</div>
                 </div>
          </div>
       </section>

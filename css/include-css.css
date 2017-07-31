@@ -1,8 +1,0 @@
----
----
-/* <!-- Flexslider CSS --> */
-{% include bower_components/flexslider/flexslider.css %}
-/* Pasley */
-{% include bower_components/parsleyjs/src/parsley.css %}
-/* Sidr-menu */
-{% include js/sidr-menu/stylesheets/jquery.sidr.dark.css %}

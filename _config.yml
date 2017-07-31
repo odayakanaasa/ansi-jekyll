@@ -6,7 +6,41 @@ baseurl: ""
 sass:
     sass_dir: _sass
 collections:
-- rooms
+  - rooms
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+exclude: ["_app",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json"] # Don't forget that Jekyll automatically
+                          # excludes files with a dot prefix
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      image: true
+  - scope:
+      path: "assets/rooms/onebedroom"
+    values:
+      room: "onebedroom"
+  - scope:
+      path: "assets/rooms/twobedroom"
+    values:
+      room: "twobedroom"
+  - scope:
+      path: "assets/rooms/studio"
+    values:
+      room: "studio"
+  - scope:
+      path: "assets/rooms/views"
+    values:
+      room: "views"
+  - scope:
+      path: "assets/rooms/outer"
+    values:
+      room: "outer"

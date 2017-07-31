@@ -10,13 +10,6 @@ medium1: "80€"
 medium2: "85€"
 high: "100€"
 prices-from: "from 80€"
-images:
-  - image: two_bedroom01.jpg
-  - image: two_bedroom02.jpg
-  - image: two_bedroom03.jpg
-  - image: two_bedroom04.jpg
-  - image: two_bedroom05.jpg
-  - image: two_bedroom06.jpg
 ---
 
 Two bedroom Apartment is suitable for 4 or 5 persons, though 5 persons it is not recommended. 

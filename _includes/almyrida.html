@@ -1,26 +1,37 @@
  <section  id="almyrida"  class="almyrida">
-            <div class="rooms-inside">    
-                <h2 class="rooms-title" >{{ site.data.almyrida.almyrida.title }}</h2>
-                <h4 class="rooms-subtitle" >{{ site.data.almyrida.almyrida.subtitle }}</h4>
+            <div class="rooms-inside">
+            <div class="rooms-header">
+                <div class="rooms-title" >{{ site.data.almyrida.almyrida.title }}</div>
+                <div class="rooms-subtitle" >{{ site.data.almyrida.almyrida.subtitle }}</div>
+              </div>
                 <div class="column-left">
                      <div class="rooms-img">
                         <div class="flexslider-rooms">
                           <ul class="slides">
-                              {% for image in site.data.almyrida.almyrida.image %}
-                            <li data-thumb="{{ image.src | prepend: '/assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
-                              <img class="lazy" src="{{ image.src | prepend: '/assets/' | prepend: site.baseurl | prepend: site.url }}" />
-                            </li>
-                              {% endfor %}
+                            {% for image in site.static_files %}
+                            {% capture imagepath1 %}/assets/rooms/outer/{% endcapture %}
+                              {% if image.path contains imagepath1 %}
+                                <li data-thumb="{{site.baseurl}}/assets/rooms/thumbnails/outer/{{image.basename}}{{image.extname}}">
+                                  <img class="lazy" src="{{site.baseurl}}/assets/rooms/outer/{{image.basename}}{{image.extname}}" />
+                                </li>
+                              {% endif %}
+                              {% capture imagepath2 %}/assets/rooms/views/{% endcapture %}
+                              {% if image.path contains imagepath2 %}
+                                <li data-thumb="{{site.baseurl}}/assets/rooms/thumbnails/views/{{image.basename}}{{image.extname}}">
+                                  <img class="lazy" src="{{site.baseurl}}/assets/rooms/views/{{image.basename}}{{image.extname}}" />
+                                </li>
+                              {% endif %}
+                           {% endfor %}
                           </ul>
                         </div>
                     </div>
                 </div>
                 <div class="column-right">
-                    
-                    <div class="rooms-description"> 
+
+                    <div class="rooms-description">
                             <p> {{ site.data.almyrida.almyrida.text }}</p>
                     </div>
-                    
+
                    <table class="rooms">
                        <thead>
                            {% assign rooms = site.rooms | sort: 'order' %}
@@ -28,13 +39,13 @@
                              {{ room.title }}
                            {% endtablerow %}
                        </thead>
-                       <tbody>                     
+                       <tbody>
                            {% tablerow room in rooms %}
                              {{ room.prices-from }}
                            {% endtablerow %}
                            </tbody>
                     </table>
-                   
+
                 </div>
             <div class="rooms-footer">
                  <div class="link-button"><a href="#reviews" class="button  button-flat button-primary">

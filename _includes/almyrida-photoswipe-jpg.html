@@ -1,0 +1,57 @@
+ <section  id="almyrida"  class="almyrida">
+            <div class="rooms-inside">
+            <div class="rooms-header">
+                <div class="rooms-title" >{{ site.data.almyrida.almyrida.title }}</div>
+                <div class="rooms-subtitle" >{{ site.data.almyrida.almyrida.subtitle }}</div>
+              </div>
+                <div class="column-left">
+                  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                    {% assign image_files = site.data.photos.index.views %}
+                    {% for image in image_files %}
+                      {% assign image-basename = image.filename | remove: ".jpg" %}
+                      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="{% if forloop.first %}full {%endif%}{% cycle 'large', 'medium' %}" style="background-image: url('{{site.baseurl}}/assets/rooms2/views/{{image-basename}}-{% if forloop.first %}large{% else %}medium{% endif %}.jpg');">
+                            <a href="{{site.baseurl}}/assets/rooms2/views/{{image-basename}}-{% if image.orientation == portrait %}portrait{% else %}full{% endif %}.jpg" itemprop="contentUrl" data-size="{% if image.orientation == portrait %}{% capture imagewebp %}{{image-basename}}-portrait.jpg{% endcapture %}{% else %} {% capture imagewebp %}{{image-basename}}-full.jpg{% endcapture %}{% endif %}{% assign imagesize = site.data.photos.index-resized.views| where: "filename",imagewebp %} {% for imagedimention in imagesize %}{{imagedimention.width}}x{{imagedimention.height}}{% endfor %}">
+                                <img src="{{site.baseurl}}/assets/rooms2/views/{{image-basename}}-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                          <figcaption itemprop="caption description">Ansi / views-{{ forloop.index }}</figcaption>
+                      </figure>
+                    {% endfor %}
+                    {% assign image_files = site.data.photos.index.outer %}
+                    {% for image in image_files %}
+                      {% assign image-basename = image.filename | remove: ".jpg" %}
+                      <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="{% cycle 'large', 'medium' %}" style="background-image: url('{{site.baseurl}}/assets/rooms2/outer/{{image-basename}}-medium.jpg');">
+                            <a href="{{site.baseurl}}/assets/rooms2/outer/{{image-basename}}-{% if image.orientation == portrait %}portrait{% else %}full{% endif %}.jpg" itemprop="contentUrl" data-size="{% if image.orientation == portrait %}{% capture imagewebp %}{{image-basename}}-portrait.jpg{% endcapture %}{% else %} {% capture imagewebp %}{{image-basename}}-full.jpg{% endcapture %}{% endif %}{% assign imagesize = site.data.photos.index-resized.outer | where: "filename",imagewebp %} {% for imagedimention in imagesize %}{{imagedimention.width}}x{{imagedimention.height}}{% endfor %}">
+                                <img src="{{site.baseurl}}/assets/rooms2/outer/{{image-basename}}-thumb.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                          <figcaption itemprop="caption description">Ansi / outer-{{ forloop.index }}</figcaption>
+                      </figure>
+                    {% endfor %}
+                  </div>
+                </div>
+                <div class="column-right">
+
+                    <div class="rooms-description">
+                            <p> {{ site.data.almyrida.almyrida.text }}</p>
+                    </div>
+
+                   <table class="rooms">
+                       <thead>
+                           {% assign rooms = site.rooms | sort: 'order' %}
+                           {% tablerow room in rooms %}
+                             {{ room.title }}
+                           {% endtablerow %}
+                       </thead>
+                       <tbody>
+                           {% tablerow room in rooms %}
+                             {{ room.prices-from }}
+                           {% endtablerow %}
+                           </tbody>
+                    </table>
+
+                </div>
+            <div class="rooms-footer">
+                 <div class="link-button"><a href="#reviews" class="button  button-flat button-primary">
+                        <i class="icon-chevron-right"></i>Reviews</a></div>
+                </div>
+                </div>
+        </section>

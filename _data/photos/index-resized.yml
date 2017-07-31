@@ -1,0 +1,1025 @@
+onebedroom:
+    - filename: onebedroom-09-full.jpg
+      width: 1440
+      height: 950
+      orientation: landscape
+    - filename: onebedroom-01-full.jpg
+      width: 1440
+      height: 609
+      orientation: landscape
+    - filename: onebedroom-01-medium.jpg
+      width: 268
+      height: 113
+      orientation: landscape
+    - filename: onebedroom-01-portrait.jpg
+      width: 2269
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-01-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-02-full.jpg
+      width: 1440
+      height: 961
+      orientation: landscape
+    - filename: onebedroom-02-large.jpg
+      width: 552
+      height: 369
+      orientation: landscape
+    - filename: onebedroom-02-medium.jpg
+      width: 268
+      height: 179
+      orientation: landscape
+    - filename: onebedroom-02-portrait.jpg
+      width: 1438
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-02-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-03-full.jpg
+      width: 1440
+      height: 949
+      orientation: landscape
+    - filename: onebedroom-03-large.jpg
+      width: 552
+      height: 364
+      orientation: landscape
+    - filename: onebedroom-03-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: onebedroom-03-portrait.jpg
+      width: 1457
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-03-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-04-full.jpg
+      width: 1440
+      height: 957
+      orientation: landscape
+    - filename: onebedroom-04-large.jpg
+      width: 552
+      height: 367
+      orientation: landscape
+    - filename: onebedroom-04-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: onebedroom-04-portrait.jpg
+      width: 1445
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-04-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-05-full.jpg
+      width: 1440
+      height: 958
+      orientation: landscape
+    - filename: onebedroom-05-large.jpg
+      width: 552
+      height: 367
+      orientation: landscape
+    - filename: onebedroom-05-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: onebedroom-05-portrait.jpg
+      width: 1443
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-05-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-06-full.jpg
+      width: 1440
+      height: 946
+      orientation: landscape
+    - filename: onebedroom-06-large.jpg
+      width: 552
+      height: 363
+      orientation: landscape
+    - filename: onebedroom-06-medium.jpg
+      width: 268
+      height: 176
+      orientation: landscape
+    - filename: onebedroom-06-portrait.jpg
+      width: 1461
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-06-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-07-full.jpg
+      width: 1440
+      height: 2315
+      orientation: portrait
+    - filename: onebedroom-07-large.jpg
+      width: 552
+      height: 887
+      orientation: portrait
+    - filename: onebedroom-07-medium.jpg
+      width: 268
+      height: 431
+      orientation: portrait
+    - filename: onebedroom-07-portrait.jpg
+      width: 597
+      height: 960
+      orientation: portrait
+    - filename: onebedroom-07-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-08-full.jpg
+      width: 1440
+      height: 2189
+      orientation: portrait
+    - filename: onebedroom-08-large.jpg
+      width: 552
+      height: 839
+      orientation: portrait
+    - filename: onebedroom-08-medium.jpg
+      width: 268
+      height: 407
+      orientation: portrait
+    - filename: onebedroom-08-portrait.jpg
+      width: 632
+      height: 960
+      orientation: portrait
+    - filename: onebedroom-08-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-01-large.jpg
+      width: 552
+      height: 234
+      orientation: landscape
+    - filename: onebedroom-09-large.jpg
+      width: 552
+      height: 364
+      orientation: landscape
+    - filename: onebedroom-09-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: onebedroom-09-portrait.jpg
+      width: 1456
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-09-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-10-full.jpg
+      width: 1440
+      height: 952
+      orientation: landscape
+    - filename: onebedroom-10-large.jpg
+      width: 552
+      height: 365
+      orientation: landscape
+    - filename: onebedroom-10-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: onebedroom-10-portrait.jpg
+      width: 1452
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-10-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-11-full.jpg
+      width: 1440
+      height: 948
+      orientation: landscape
+    - filename: onebedroom-11-large.jpg
+      width: 552
+      height: 363
+      orientation: landscape
+    - filename: onebedroom-11-medium.jpg
+      width: 268
+      height: 176
+      orientation: landscape
+    - filename: onebedroom-11-portrait.jpg
+      width: 1458
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-11-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-12-full.jpg
+      width: 1440
+      height: 948
+      orientation: landscape
+    - filename: onebedroom-12-large.jpg
+      width: 552
+      height: 363
+      orientation: landscape
+    - filename: onebedroom-12-medium.jpg
+      width: 268
+      height: 176
+      orientation: landscape
+    - filename: onebedroom-12-portrait.jpg
+      width: 1458
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-12-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-13-full.jpg
+      width: 1440
+      height: 955
+      orientation: landscape
+    - filename: onebedroom-13-large.jpg
+      width: 552
+      height: 366
+      orientation: landscape
+    - filename: onebedroom-13-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: onebedroom-13-portrait.jpg
+      width: 1448
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-13-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-14-full.jpg
+      width: 1440
+      height: 952
+      orientation: landscape
+    - filename: onebedroom-14-large.jpg
+      width: 552
+      height: 365
+      orientation: landscape
+    - filename: onebedroom-14-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: onebedroom-14-portrait.jpg
+      width: 1452
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-14-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-15-full.jpg
+      width: 1440
+      height: 951
+      orientation: landscape
+    - filename: onebedroom-15-large.jpg
+      width: 552
+      height: 365
+      orientation: landscape
+    - filename: onebedroom-15-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: onebedroom-15-portrait.jpg
+      width: 1453
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-15-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: onebedroom-16-full.jpg
+      width: 1440
+      height: 954
+      orientation: landscape
+    - filename: onebedroom-16-large.jpg
+      width: 552
+      height: 366
+      orientation: landscape
+    - filename: onebedroom-16-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: onebedroom-16-portrait.jpg
+      width: 1449
+      height: 960
+      orientation: landscape
+    - filename: onebedroom-16-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+outer:
+    - filename: outer-03-full.jpg
+      width: 1440
+      height: 2160
+      orientation: portrait
+    - filename: outer-01-full.jpg
+      width: 1440
+      height: 2197
+      orientation: portrait
+    - filename: outer-01-medium.jpg
+      width: 268
+      height: 409
+      orientation: portrait
+    - filename: outer-01-portrait.jpg
+      width: 629
+      height: 960
+      orientation: portrait
+    - filename: outer-01-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: outer-02-full.jpg
+      width: 1440
+      height: 962
+      orientation: landscape
+    - filename: outer-02-large.jpg
+      width: 552
+      height: 369
+      orientation: landscape
+    - filename: outer-02-medium.jpg
+      width: 268
+      height: 179
+      orientation: landscape
+    - filename: outer-02-portrait.jpg
+      width: 1437
+      height: 960
+      orientation: landscape
+    - filename: outer-02-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: outer-01-large.jpg
+      width: 552
+      height: 842
+      orientation: portrait
+    - filename: outer-03-large.jpg
+      width: 552
+      height: 828
+      orientation: portrait
+    - filename: outer-03-medium.jpg
+      width: 268
+      height: 402
+      orientation: portrait
+    - filename: outer-03-portrait.jpg
+      width: 640
+      height: 960
+      orientation: portrait
+    - filename: outer-03-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: outer-04-full.jpg
+      width: 1440
+      height: 1080
+      orientation: landscape
+    - filename: outer-04-large.jpg
+      width: 552
+      height: 414
+      orientation: landscape
+    - filename: outer-04-medium.jpg
+      width: 268
+      height: 201
+      orientation: landscape
+    - filename: outer-04-portrait.jpg
+      width: 1280
+      height: 960
+      orientation: landscape
+    - filename: outer-04-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+studio:
+    - filename: studio-05-medium.jpg
+      width: 268
+      height: 357
+      orientation: portrait
+    - filename: studio-01-full.jpg
+      width: 1440
+      height: 968
+      orientation: landscape
+    - filename: studio-01-medium.jpg
+      width: 268
+      height: 180
+      orientation: landscape
+    - filename: studio-01-portrait.jpg
+      width: 1428
+      height: 960
+      orientation: landscape
+    - filename: studio-01-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-02-full.jpg
+      width: 1440
+      height: 947
+      orientation: landscape
+    - filename: studio-02-large.jpg
+      width: 552
+      height: 363
+      orientation: landscape
+    - filename: studio-02-medium.jpg
+      width: 268
+      height: 176
+      orientation: landscape
+    - filename: studio-02-portrait.jpg
+      width: 1460
+      height: 960
+      orientation: landscape
+    - filename: studio-02-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-03-full.jpg
+      width: 1440
+      height: 942
+      orientation: landscape
+    - filename: studio-03-large.jpg
+      width: 552
+      height: 361
+      orientation: landscape
+    - filename: studio-03-medium.jpg
+      width: 268
+      height: 175
+      orientation: landscape
+    - filename: studio-03-portrait.jpg
+      width: 1468
+      height: 960
+      orientation: landscape
+    - filename: studio-03-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-04-full.jpg
+      width: 1280
+      height: 956
+      orientation: landscape
+    - filename: studio-04-large.jpg
+      width: 552
+      height: 412
+      orientation: landscape
+    - filename: studio-04-medium.jpg
+      width: 268
+      height: 200
+      orientation: landscape
+    - filename: studio-04-portrait.jpg
+      width: 1280
+      height: 956
+      orientation: landscape
+    - filename: studio-04-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-05-full.jpg
+      width: 1440
+      height: 1920
+      orientation: portrait
+    - filename: studio-05-large.jpg
+      width: 552
+      height: 736
+      orientation: portrait
+    - filename: studio-01-large.jpg
+      width: 552
+      height: 371
+      orientation: landscape
+    - filename: studio-05-portrait.jpg
+      width: 720
+      height: 960
+      orientation: portrait
+    - filename: studio-05-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-06-full.jpg
+      width: 1440
+      height: 955
+      orientation: landscape
+    - filename: studio-06-large.jpg
+      width: 552
+      height: 366
+      orientation: landscape
+    - filename: studio-06-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: studio-06-portrait.jpg
+      width: 1448
+      height: 960
+      orientation: landscape
+    - filename: studio-06-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-07-full.jpg
+      width: 1440
+      height: 2028
+      orientation: portrait
+    - filename: studio-07-large.jpg
+      width: 552
+      height: 777
+      orientation: portrait
+    - filename: studio-07-medium.jpg
+      width: 268
+      height: 377
+      orientation: portrait
+    - filename: studio-07-portrait.jpg
+      width: 682
+      height: 960
+      orientation: portrait
+    - filename: studio-07-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-08-full.jpg
+      width: 1440
+      height: 985
+      orientation: landscape
+    - filename: studio-08-large.jpg
+      width: 552
+      height: 378
+      orientation: landscape
+    - filename: studio-08-medium.jpg
+      width: 268
+      height: 183
+      orientation: landscape
+    - filename: studio-08-portrait.jpg
+      width: 1404
+      height: 960
+      orientation: landscape
+    - filename: studio-08-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: studio-09-full.jpg
+      width: 1440
+      height: 1080
+      orientation: landscape
+    - filename: studio-09-large.jpg
+      width: 552
+      height: 414
+      orientation: landscape
+    - filename: studio-09-medium.jpg
+      width: 268
+      height: 201
+      orientation: landscape
+    - filename: studio-09-portrait.jpg
+      width: 1280
+      height: 960
+      orientation: landscape
+    - filename: studio-09-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+twobedroom:
+    - filename: twobedroom-08-full.jpg
+      width: 1440
+      height: 949
+      orientation: landscape
+    - filename: twobedroom-01-full.jpg
+      width: 1440
+      height: 1080
+      orientation: landscape
+    - filename: twobedroom-01-medium.jpg
+      width: 268
+      height: 201
+      orientation: landscape
+    - filename: twobedroom-01-portrait.jpg
+      width: 1280
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-01-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-02-full.jpg
+      width: 1440
+      height: 953
+      orientation: landscape
+    - filename: twobedroom-02-large.jpg
+      width: 552
+      height: 365
+      orientation: landscape
+    - filename: twobedroom-02-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: twobedroom-02-portrait.jpg
+      width: 1451
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-02-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-03-full.jpg
+      width: 1440
+      height: 1080
+      orientation: landscape
+    - filename: twobedroom-03-large.jpg
+      width: 552
+      height: 414
+      orientation: landscape
+    - filename: twobedroom-03-medium.jpg
+      width: 268
+      height: 201
+      orientation: landscape
+    - filename: twobedroom-03-portrait.jpg
+      width: 1280
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-03-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-04-full.jpg
+      width: 1440
+      height: 971
+      orientation: landscape
+    - filename: twobedroom-04-large.jpg
+      width: 552
+      height: 372
+      orientation: landscape
+    - filename: twobedroom-04-medium.jpg
+      width: 268
+      height: 181
+      orientation: landscape
+    - filename: twobedroom-04-portrait.jpg
+      width: 1424
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-04-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-05-full.jpg
+      width: 1440
+      height: 2187
+      orientation: portrait
+    - filename: twobedroom-05-large.jpg
+      width: 552
+      height: 838
+      orientation: portrait
+    - filename: twobedroom-05-medium.jpg
+      width: 268
+      height: 407
+      orientation: portrait
+    - filename: twobedroom-05-portrait.jpg
+      width: 632
+      height: 960
+      orientation: portrait
+    - filename: twobedroom-05-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-06-full.jpg
+      width: 1440
+      height: 2179
+      orientation: portrait
+    - filename: twobedroom-06-large.jpg
+      width: 552
+      height: 835
+      orientation: portrait
+    - filename: twobedroom-06-medium.jpg
+      width: 268
+      height: 405
+      orientation: portrait
+    - filename: twobedroom-06-portrait.jpg
+      width: 634
+      height: 960
+      orientation: portrait
+    - filename: twobedroom-06-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-07-full.jpg
+      width: 1440
+      height: 2243
+      orientation: portrait
+    - filename: twobedroom-07-large.jpg
+      width: 552
+      height: 860
+      orientation: portrait
+    - filename: twobedroom-07-medium.jpg
+      width: 268
+      height: 417
+      orientation: portrait
+    - filename: twobedroom-07-portrait.jpg
+      width: 616
+      height: 960
+      orientation: portrait
+    - filename: twobedroom-07-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-01-large.jpg
+      width: 552
+      height: 414
+      orientation: landscape
+    - filename: twobedroom-08-large.jpg
+      width: 552
+      height: 364
+      orientation: landscape
+    - filename: twobedroom-08-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: twobedroom-08-portrait.jpg
+      width: 1456
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-08-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-09-full.jpg
+      width: 1440
+      height: 2151
+      orientation: portrait
+    - filename: twobedroom-09-large.jpg
+      width: 552
+      height: 825
+      orientation: portrait
+    - filename: twobedroom-09-medium.jpg
+      width: 268
+      height: 400
+      orientation: portrait
+    - filename: twobedroom-09-portrait.jpg
+      width: 643
+      height: 960
+      orientation: portrait
+    - filename: twobedroom-09-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-10-full.jpg
+      width: 1440
+      height: 954
+      orientation: landscape
+    - filename: twobedroom-10-large.jpg
+      width: 552
+      height: 366
+      orientation: landscape
+    - filename: twobedroom-10-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: twobedroom-10-portrait.jpg
+      width: 1449
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-10-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-11-full.jpg
+      width: 1440
+      height: 892
+      orientation: landscape
+    - filename: twobedroom-11-large.jpg
+      width: 552
+      height: 342
+      orientation: landscape
+    - filename: twobedroom-11-medium.jpg
+      width: 268
+      height: 166
+      orientation: landscape
+    - filename: twobedroom-11-portrait.jpg
+      width: 1550
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-11-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-12-full.jpg
+      width: 1440
+      height: 953
+      orientation: landscape
+    - filename: twobedroom-12-large.jpg
+      width: 552
+      height: 365
+      orientation: landscape
+    - filename: twobedroom-12-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: twobedroom-12-portrait.jpg
+      width: 1451
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-12-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-13-full.jpg
+      width: 1440
+      height: 956
+      orientation: landscape
+    - filename: twobedroom-13-large.jpg
+      width: 552
+      height: 367
+      orientation: landscape
+    - filename: twobedroom-13-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: twobedroom-13-portrait.jpg
+      width: 1446
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-13-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: twobedroom-14-full.jpg
+      width: 1440
+      height: 956
+      orientation: landscape
+    - filename: twobedroom-14-large.jpg
+      width: 552
+      height: 367
+      orientation: landscape
+    - filename: twobedroom-14-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: twobedroom-14-portrait.jpg
+      width: 1446
+      height: 960
+      orientation: landscape
+    - filename: twobedroom-14-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+views:
+    - filename: views-05-full.jpg
+      width: 1440
+      height: 954
+      orientation: landscape
+    - filename: views-01-full.jpg
+      width: 1440
+      height: 949
+      orientation: landscape
+    - filename: views-01-medium.jpg
+      width: 268
+      height: 177
+      orientation: landscape
+    - filename: views-01-portrait.jpg
+      width: 1457
+      height: 960
+      orientation: landscape
+    - filename: views-01-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-02-full.jpg
+      width: 1440
+      height: 943
+      orientation: landscape
+    - filename: views-02-large.jpg
+      width: 552
+      height: 361
+      orientation: landscape
+    - filename: views-02-medium.jpg
+      width: 268
+      height: 175
+      orientation: landscape
+    - filename: views-02-portrait.jpg
+      width: 1467
+      height: 960
+      orientation: landscape
+    - filename: views-02-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-03-full.jpg
+      width: 1440
+      height: 936
+      orientation: landscape
+    - filename: views-03-large.jpg
+      width: 552
+      height: 359
+      orientation: landscape
+    - filename: views-03-medium.jpg
+      width: 268
+      height: 174
+      orientation: landscape
+    - filename: views-03-portrait.jpg
+      width: 1477
+      height: 960
+      orientation: landscape
+    - filename: views-03-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-04-full.jpg
+      width: 1440
+      height: 954
+      orientation: landscape
+    - filename: views-04-large.jpg
+      width: 552
+      height: 366
+      orientation: landscape
+    - filename: views-04-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: views-04-portrait.jpg
+      width: 1449
+      height: 960
+      orientation: landscape
+    - filename: views-04-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-01-large.jpg
+      width: 552
+      height: 364
+      orientation: landscape
+    - filename: views-05-large.jpg
+      width: 552
+      height: 366
+      orientation: landscape
+    - filename: views-05-medium.jpg
+      width: 268
+      height: 178
+      orientation: landscape
+    - filename: views-05-portrait.jpg
+      width: 1449
+      height: 960
+      orientation: landscape
+    - filename: views-05-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-06-full.jpg
+      width: 1440
+      height: 960
+      orientation: landscape
+    - filename: views-06-large.jpg
+      width: 552
+      height: 368
+      orientation: landscape
+    - filename: views-06-medium.jpg
+      width: 268
+      height: 179
+      orientation: landscape
+    - filename: views-06-portrait.jpg
+      width: 1440
+      height: 960
+      orientation: landscape
+    - filename: views-06-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-07-full.jpg
+      width: 1440
+      height: 960
+      orientation: landscape
+    - filename: views-07-large.jpg
+      width: 552
+      height: 368
+      orientation: landscape
+    - filename: views-07-medium.jpg
+      width: 268
+      height: 179
+      orientation: landscape
+    - filename: views-07-portrait.jpg
+      width: 1440
+      height: 960
+      orientation: landscape
+    - filename: views-07-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape
+    - filename: views-08-full.jpg
+      width: 1440
+      height: 960
+      orientation: landscape
+    - filename: views-08-large.jpg
+      width: 552
+      height: 368
+      orientation: landscape
+    - filename: views-08-medium.jpg
+      width: 268
+      height: 179
+      orientation: landscape
+    - filename: views-08-portrait.jpg
+      width: 1440
+      height: 960
+      orientation: landscape
+    - filename: views-08-thumb.jpg
+      width: 1
+      height: 1
+      orientation: landscape

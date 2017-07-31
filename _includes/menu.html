@@ -1,16 +1,12 @@
-<div id="mobile-header" class="mobile-menu">
-    <a id="responsive-menu-button" href="#sidr-main">Menu</a>
-</div>
-
 <div id="navigation" class="navigation">
-        {% include offer.html %} 
-    <div class="menu-wrapper">
-        <div class="menu">
-            <ul>
-           {% for menu in site.data.menu %} 
-            <li><a  href="#{{ menu.href }}" >{{ menu.title }}</a></li>
-           {% endfor %}
-                </ul>
-        </div>
-        </div>
-  </div>
+<div class="mob">
+  {% for menu in site.data.menu.mob %} 
+    <a href="#{{ menu.href }}">{{ menu.title-mob }}</a>
+  {% endfor %}
+</div>
+<div class="large">
+  {% for menu in site.data.menu.large %} 
+    <a href="#{{ menu.href }}">{{ menu.title }}</a>
+  {% endfor %}
+</div>
+</div>

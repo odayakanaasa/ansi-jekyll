@@ -1,28 +1,29 @@
 {% assign rooms = site.rooms | sort: 'order' %}
 {% for room in rooms %}
     <section id="{{ room.section }}" class="rooms {{ room.section }} ">
-            <div class="rooms-inside">    
-                <h2 class="rooms-title" >{{ room.title }} </h2>
-                <h4 class="rooms-subtitle" >{{ room.subtitle }} </h4>
+            <div class="rooms-inside">
+            <div class="rooms-header">
+                <div class="rooms-title" >{{ room.title }}</div>
+                <div class="rooms-subtitle" >{{ room.subtitle }} </div>
+              </div>
                 <div class="column-left">
                      <div class="rooms-img">
                         <div class="flexslider-rooms">
-                          <ul class="slides">                              
-                              {% capture appartment %} {{ room.section }} {% endcapture %}
-                              {% for image in room.images %}                             
-                                <li data-thumb="{{ image.image | prepend: '/assets/thumbnails/'  | prepend: site.baseurl | prepend: site.url }}">
-                                    {{ image.section }}
-                                  <img class="lazy" src="/assets/loading.jpg" data-src="{{ image.image | prepend: '/assets/' | prepend: site.baseurl | prepend: site.url  }}" width="662" height="445"/>
-                                </li>
-                               {% endfor %}
+                          <ul class="slides">
+                          {% assign image_files = site.static_files | where: "room",room.section %}
+                            {% for image in image_files %}
+                                    <li data-thumb="{{site.baseurl}}/assets/rooms/thumbnails/{{room.section}}/{{image.basename}}{{image.extname}}">
+                                      <img class="lazy" src="/assets/loading.jpg" data-src="{{site.baseurl}}/assets/rooms/{{room.section}}/{{image.basename}}{{image.extname}}" />
+                                    </li>
+                             {% endfor %}
                           </ul>
                         </div>
                     </div>
                 </div>
                 <div class="column-right">
-                    
+
                     <div class="rooms-description"> {{ room.content }} </div>
-                    
+
                    <table class="prices">
                        <thead>
                            <tr>
@@ -37,10 +38,10 @@
                                      <td> {{ room.medium1 }} </td>
                                      <td> {{ room.high }} </td>
                                     <td> {{ room.medium2 }} </td>
-                                  </tr> 
+                                  </tr>
                                </tbody>
                     </table>
-                   
+
                 </div>
             <div class="rooms-footer">
                  <div class="link-button"><a href="#reservation" class="button  button-flat button-primary">

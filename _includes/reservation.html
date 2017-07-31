@@ -1,6 +1,6 @@
 <section id="reservation" class="reservation">
     <div class="reservation-inside">
-      <h2 class="reservation-title" >Reservation</h2>
+      <div class="reservation-title" >Reservation</div>
         <div class="success-message">
             <h1>Thank you! We will get back to you to confirm your reservation!</h1>
         </div>
@@ -11,12 +11,24 @@
           <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
           <input type='hidden' name='redirect_to' />
           <!-- all your input fields here.... -->
-           <div class="reservation-left">
+           <div class="reservation-fields">
+           <div class="checkin field">
               <label>Check in *</label>
                 <input type='text' id="checkin" class='input' name='checkin' required>
-               
+          </div>
+          <div class="checkout field">
+              <label>Check out *</label>
+                    <input type='text' id="checkout" class='input' name='checkout' required>
+          </div>
+          <div class="name field">
               <label>Name *</label>
                   <input type='text' name='name' placeholder="Name" required>
+</div>
+<div class="email field">
+               <label>Email *</label>
+                    <input type='email' id="email" name='email' placeholder="youremail@email.com" data-parsley-trigger="change"  data-parsley-type="email" required>
+</div>
+<div class="room-type field">
               <label>Room Type *</label>
                    <select id="edit-submitted-room-type" name="roomtype" class="form-select required" required>
                    <option value="" selected="selected">- Select -</option>
@@ -24,29 +36,24 @@
                    <option value="one bedroom">One bedroom apartment</option>
                    <option value="teo bedroom">Two bedroom apartment</option>
                     </select>
-             </div>
-            <div class="reservation-right">            
-                <label>Check out *</label>
-                    <input type='text' id="checkout" class='input' name='checkout' required>
-              
-                <label>Email *</label>
-                    <input type='email' name='email' placeholder="youremail@email.com" data-parsley-trigger="change"  data-parsley-type="email" required>
-                <label>Persons *</label>
-                 <select id="edit-submitted-persons" name="persons" class="form-select required" required>
-                   <option value="" selected="selected">- Select -</option>
-                   <option value="1">1</option>
-                   <option value="2">2</option>
-                   <option value="3">3</option>
-                   <option value="3">4</option>
-                   <option value="3">5</option>
-                    </select>
-               
-            </div>
+     </div>
+<div class="persons field">
+              <label>Persons *</label>
+               <select id="edit-submitted-persons" name="persons" class="form-select required" required>
+                 <option value="" selected="selected">- Select -</option>
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="3">4</option>
+                 <option value="3">5</option>
+              </select>
+</div>
+</div>
              <div  class="reservation-message">
              <label>Message</label>
                    <textarea id="edit-submitted-message" name="message" cols="150" rows="5" class="form-textarea"></textarea>
             </div>
-            <div class="reservation-right">  
+            <div class="reservation-footer">  
               <input type='submit' value='Send'>
             </div>
         </form>

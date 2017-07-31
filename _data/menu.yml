@@ -1,17 +1,46 @@
-- title: Studio
-  href: "studio"
+mob:
+  - title: Studio
+    title-mob: Studio
+    href: "studio"
+    class: rooms
 
-- title: One bedroom
-  href: "onebedroom"
-  
-- title: Two bedroom
-  href: "twobedroom"
-  
-- title: Contact
-  href: "contact"
-  
-- title: Reservation
-  href: "reservation"
-  
-- title: Reviews
-  href: "reviews"
+  - title: One bedroom
+    title-mob: One bed
+    href: "onebedroom"
+    class: rooms
+
+  - title: Two bedroom
+    title-mob: Two bed
+    href: "twobedroom"
+    class: rooms
+
+large:
+  - title: Studio
+    title-mob: Studio
+    href: "studio"
+    class: rooms
+
+  - title: One bedroom
+    title-mob: One bed
+    href: "onebedroom"
+    class: rooms
+
+  - title: Two bedroom
+    title-mob: Two bed
+    href: "twobedroom"
+    class: rooms
+
+  - title: Contact
+    title-mob: Contact
+    href: "contact"
+    class: hidden
+
+  - title: Reservation
+    title-mob: Reservation
+    href: "reservation"
+    class: hidden
+
+  - title: Reviews
+    title-mob: Reviews
+    href: "reviews"
+    class: hidden

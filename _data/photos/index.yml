@@ -1,0 +1,209 @@
+onebedroom:
+    - filename: onebedroom-09.jpg
+      width: 2388
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-01.jpg
+      width: 3723
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-03.jpg
+      width: 2391
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-04.jpg
+      width: 2371
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-05.jpg
+      width: 2367
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-06.jpg
+      width: 2397
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-07.jpg
+      width: 1575
+      height: 2532
+      orientation: portrait
+    - filename: onebedroom-08.jpg
+      width: 1575
+      height: 2394
+      orientation: portrait
+    - filename: onebedroom-02.jpg
+      width: 2359
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-10.jpg
+      width: 2382
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-11.jpg
+      width: 2392
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-12.jpg
+      width: 2392
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-13.jpg
+      width: 2376
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-14.jpg
+      width: 2382
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-15.jpg
+      width: 2384
+      height: 1575
+      orientation: landscape
+    - filename: onebedroom-16.jpg
+      width: 2378
+      height: 1575
+      orientation: landscape
+outer:
+    - filename: outer-01.jpg
+      width: 1575
+      height: 2403
+      orientation: portrait
+    - filename: outer-02.jpg
+      width: 2358
+      height: 1575
+      orientation: landscape
+    - filename: outer-03.jpg
+      width: 1575
+      height: 2363
+      orientation: portrait
+    - filename: outer-04.jpg
+      width: 3264
+      height: 2448
+      orientation: landscape
+studio:
+    - filename: studio-01.jpg
+      width: 2343
+      height: 1575
+      orientation: landscape
+    - filename: studio-02.jpg
+      width: 2395
+      height: 1575
+      orientation: landscape
+    - filename: studio-03.jpg
+      width: 2408
+      height: 1575
+      orientation: landscape
+    - filename: studio-04.jpg
+      width: 1280
+      height: 956
+      orientation: landscape
+    - filename: studio-05.jpg
+      width: 2448
+      height: 3264
+      orientation: portrait
+    - filename: studio-06.jpg
+      width: 2376
+      height: 1575
+      orientation: landscape
+    - filename: studio-07.jpg
+      width: 5376
+      height: 7570
+      orientation: portrait
+    - filename: studio-08.jpg
+      width: 2303
+      height: 1575
+      orientation: landscape
+    - filename: studio-09.jpg
+      width: 3264
+      height: 2448
+      orientation: landscape
+twobedroom:
+    - filename: twobedroom-08.jpg
+      width: 2389
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-01.jpg
+      width: 3264
+      height: 2448
+      orientation: landscape
+    - filename: twobedroom-03.jpg
+      width: 3264
+      height: 2448
+      orientation: landscape
+    - filename: twobedroom-04.jpg
+      width: 2336
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-05.jpg
+      width: 1575
+      height: 2392
+      orientation: portrait
+    - filename: twobedroom-06.jpg
+      width: 1575
+      height: 2383
+      orientation: portrait
+    - filename: twobedroom-07.jpg
+      width: 1575
+      height: 2453
+      orientation: portrait
+    - filename: twobedroom-02.jpg
+      width: 2381
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-09.jpg
+      width: 1575
+      height: 2353
+      orientation: portrait
+    - filename: twobedroom-10.jpg
+      width: 2377
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-11.jpg
+      width: 2543
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-12.jpg
+      width: 2381
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-13.jpg
+      width: 2372
+      height: 1575
+      orientation: landscape
+    - filename: twobedroom-14.jpg
+      width: 2372
+      height: 1575
+      orientation: landscape
+views:
+    - filename: views-01.jpg
+      width: 2391
+      height: 1575
+      orientation: landscape
+    - filename: views-02.jpg
+      width: 2406
+      height: 1575
+      orientation: landscape
+    - filename: views-03.jpg
+      width: 2423
+      height: 1575
+      orientation: landscape
+    - filename: views-04.jpg
+      width: 2377
+      height: 1575
+      orientation: landscape
+    - filename: views-05.jpg
+      width: 2378
+      height: 1575
+      orientation: landscape
+    - filename: views-06.jpg
+      width: 2304
+      height: 1536
+      orientation: landscape
+    - filename: views-07.jpg
+      width: 2304
+      height: 1536
+      orientation: landscape
+    - filename: views-08.jpg
+      width: 2304
+      height: 1536
+      orientation: landscape
