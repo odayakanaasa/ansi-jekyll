@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html>
+{% include head.html %}
+<body>
+<div class="page">
+    <div class="page-wrapper">
 
-  {% include head.html %}
-
-    <body>
-    <div class="page">
-        <div class="page-wrapper">
+    {% include photoswipe.html %}
 
     {% include hero.html %}
 
+    {% include contact.html %}
 
-    {% include almyrida.html %}
+    {% include almyrida-photoswipe-jpg.html %}
 
-    {% include rooms.html %}
+    {% include rooms-photoswipe-jpg.html %}
 
-	{% include reviews.html %}
+      {% include reviews.html %}
 
     {% include reservation.html %}
 
     {% include map.html %}
 
-    {% include photoswipe.html %}
-
-            </div>
         </div>
-         <!-- Js all-->
-         <script type="text/javascript" src="js/js-all.js"></script>
+    </div>
 
-    </body>
+<script>
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
+}
+</script>
+ <!-- Js all-->
+ <script type="text/javascript" src="/assets/js/js-all.js"></script>
+ <!-- <script type="text/javascript" src="/assets/js/optimized/js-all.js"></script> -->
+ <!-- <script type="text/javascript" src="/assets/js/optimized/js-all.js"></script> -->
+</body>
 </html>
