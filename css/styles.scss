@@ -636,11 +636,6 @@ p {
             @include span(4 last of 12);
         }
     }
-
-
-
-
-
 @media (min-width: 800px) {
   .slideshow-title-small, .navigation .mob ,.contact-mob {
         display: none;
