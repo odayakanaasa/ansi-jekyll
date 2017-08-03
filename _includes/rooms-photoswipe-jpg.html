@@ -13,7 +13,6 @@
                     {% assign image-basename = image.filename | remove: ".jpg" %}
                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="{% if forloop.first %}full {%endif%}{% cycle 'large', 'medium' %}" style="background-image: url('{{site.baseurl}}/assets/rooms2/{{room.section}}/{{image-basename}}-large.jpg');-ms-grid-column:{{forloop.index}};-ms-grid-row:{% cycle '1', '2' %}">
                           <a href="{{site.baseurl}}/assets/rooms2/{{room.section}}/{{image-basename}}-{% if image.orientation == portrait %}portrait{% else %}full{% endif %}.jpg" itemprop="contentUrl" data-size="{% if image.orientation == portrait %}{% capture imagewebp %}{{image-basename}}-portrait.jpg{% endcapture %}{% else %} {% capture imagewebp %}{{image-basename}}-full.jpg{% endcapture %}{% endif %}{% assign imagesize = site.data.photos.index-resized[room.section] | where: "filename",imagewebp %} {% for imagedimention in imagesize %}{{imagedimention.width}}x{{imagedimention.height}}{% endfor %}">
-                             
                           </a>
                         <figcaption itemprop="caption description">Ansi / {{ room.section }}-{{ forloop.index }}</figcaption>
                     </figure>
@@ -21,9 +20,7 @@
                   </div>
                 </div>
                 <div class="column-right">
-
                     <div class="rooms-description"> {{ room.content }} </div>
-
                    <table class="prices">
                        <thead>
                            <tr>
