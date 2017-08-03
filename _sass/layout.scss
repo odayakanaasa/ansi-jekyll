@@ -9,11 +9,10 @@ section {
 
 }
 @media(min-width: 250px) and (max-width: 794px) {
-
     .navigation .menu,
     .site-footer .wrap {
         @include container(25em);
-    }   
+    }
     .reviews-inside {
         @include container;
         padding-top: 6em;
@@ -44,10 +43,9 @@ section {
         padding-left: 5px;
         padding-right: 5px;
         @include container;
-            .slideshow-message-inside {        
+            .slideshow-message-inside {
             position: absolute;
             top: 8em;
-              
             }
     }
 
@@ -64,7 +62,6 @@ section {
             margin-bottom: 30px;
             }
     }
-    
     .contact {
         @include push(7 of 12);
         margin-top: -425px;

@@ -1,0 +1,749 @@
+/* start content */
+@import "bower_components/photoswipe/dist/photoswipe.css";
+@import "bower_components/photoswipe/dist/default-skin/default-skin.css";
+/* <!-- Flexslider CSS --> */
+@import "bower_components/flexslider/flexslider.css";
+/* Pasley */
+@import "bower_components/parsleyjs/src/parsley.css";
+@import "classic";
+@import "classic.date";
+
+/* Compass mixins */
+@mixin no-bullet {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+@mixin no-bullets {
+  list-style: none;
+  li {
+    @include no-bullet;
+  }
+}
+
+@mixin inline-list {
+  list-style-type: none;
+  &, & li {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+  }
+}
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/css/fonts/BebasNeue Bold.eot'); /* IE9 Compat Modes */
+  src: url('/css/fonts/BebasNeue Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/css/fonts/BebasNeue Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/css/fonts/BebasNeue Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/css/fonts/BebasNeue Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('/css/fonts/PTS55F-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/css/fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/css/fonts/PTS55F-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/css/fonts/PTS55F-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/css/fonts/PTS55F-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+    font-family: 'PT Sans';
+    font-size: 13px;
+    font-size: 100%;
+    overflow-x: hidden;
+    color: #484848;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue','Montserrat',Arial;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+}
+img {
+    width: 100%;
+}
+p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom:0.5em;
+}
+/*  */
+/* Background Colors */
+/*  */
+.almyrida {
+    // background: #FFFFE5;
+    background: #d7dad9;
+}
+.onebedroom {
+    // background: #F2E2D2;
+    background: #d7dad9;
+}
+.studio {
+    // background: #FFFFE5;
+    background: #c9d3e2;
+}
+.twobedroom {
+    // background: #f2f2ef;
+    background: #c9d3e2;
+}
+.reviews {
+    // background: #cccccc;
+    background: #d7dad9;
+
+    h2 {
+        margin-bottom: 0.5em;
+    }
+}
+.reservation {
+    // background: #41505E;
+    background: #8c9c96;
+}
+
+/*  */
+/* Slideshow */
+/*  */
+.flexslider {
+    margin: 0;
+    background: #fff;
+    border: 0px solid #fff;
+    position: relative;
+    border-radius: 0px;
+    zoom: 1;
+}
+.slideshow-message {
+        .slideshow-message-inside {   
+              background: rgba(0, 0, 0, 0.15);
+                box-shadow: 0 0px 100px 71px rgba(0, 0, 0, 0.15);
+        }
+        .slideshow-title {
+            font-family: 'Bebas Neue','Montserrat',Arial;
+            margin: 0;
+            padding: 10px 10px;
+            line-height: 65px;
+            border: 0;
+            font-size: 5em;
+            text-transform: uppercase;
+            font-weight: normal;
+            color:#fff;
+        }
+        .slideshow-subtitle {
+            font-family: 'PT Sans';
+            display: inline-block;
+            color: #fff;
+            padding: 15px;
+            margin: 0;
+        }
+}
+// HERO
+.hero {
+    background: url(/assets/slideshow/onebedroom-01-full.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+// TOP MENU
+.topmenu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 1px #ccc;
+    z-index: 1400;
+    opacity: 0.9;
+}
+.topmenu {
+        .slideshow-message-inside {   
+              background: #223e70;
+        }
+        .slideshow-title, .slideshow-title-small {
+            font-family: 'Bebas Neue','Montserrat',Arial;
+            margin: 0;
+            padding: 0px 20px;
+            border: 0;
+            font-size: 2em;
+            text-transform: uppercase;
+            font-weight: normal;
+            color:#fff;
+            line-height: 1.3;
+        }
+        .slideshow-title {
+            padding: 0 30px;
+            line-height: 2;
+        }
+        .slideshow-subtitle {
+            font-family: 'PT Sans';
+            display: inline-block;
+            color: #fff;
+            padding: 15px;
+            margin: 0;
+        }
+}
+/*  */
+/* Menu */
+/*  */
+.navigation {
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    a {
+        color: #223e70;
+        text-transform: uppercase;
+        text-decoration: none;
+        order: 1;
+        color: #2d4b83;
+    }
+    .mob {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+    }
+    .large {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+    }
+    .large a {
+        // border-left: 1px solid #f5f9ff;
+        padding: 0 5px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+    .large a:first-child {
+        border-left: none;
+    }
+}
+// CONTACT MOBILE
+
+.contact-mob {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+    background: #eee;
+    .email {
+        display: flex;
+        justify-content: center;
+    }
+    a {
+        background-color: transparent;
+        color: #08275d;
+        text-decoration: none;
+        text-align: center;
+    }
+
+}
+/*  */
+/* Offer */
+/*  */
+.offer-wrapper {
+    background: #0F7FBA;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+    .offer{
+        text-align: center;
+        color: #fff;
+        h4 {
+            font-family: 'PT Sans';
+            padding: 0.5em 0 0;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 0.8em;
+            float: right;
+        }
+    }
+}
+
+/*  */
+/* ROOMS */
+/*  */
+.almyrida .rooms-inside .column-right table .row1 td {
+    padding: 20px 0;
+}
+.rooms-header {
+    font-family: 'Bebas Neue','Montserrat',Arial;
+    font-style: normal;
+    font-weight: normal;
+
+    .rooms-title {
+        font-size: 4em;
+        text-transform: uppercase;
+    }
+    .rooms-subtitle {
+        font-size:2em;
+        padding-bottom: 0.5em;
+        text-transform: uppercase;
+    }
+}
+.rooms-inside {
+        padding-top: 7em;
+        padding-bottom: 8em;
+        .flexslider-rooms .flex-control-thumbs li {
+            width: 62px;
+            float: left;
+            margin-right: 5px;
+                img {
+                    background: none;
+                    padding: 0;
+                }
+             }
+        .column-left {
+            .flexslider-rooms .flex-control-thumbs li {
+                width: 62px;
+                float: left;
+                margin-right: 5px;
+            }
+        }
+        .column-right {
+            margin-bottom: 2em;
+            display: flex;
+            flex-direction: column;
+            .rooms-description {
+                margin-bottom: 40px;
+            }
+            margin-bottom: 2em;
+        }
+     table {
+                -webkit-font-smoothing: antialiased;
+                font-size: 1.2em;
+                width: 100%;
+                float: left;
+                margin-right: 1.26582%;
+                text-align: center;
+                table-layout: fixed;
+            th,
+            thead td {
+                // background-color: #70c469;
+                    background-color: #00388e;
+                font-weight: normal;
+                color: #ffffff;
+                padding: 20px 0;
+                text-align: center;
+                }
+             tbody tr td {
+                background-color: #eeeeee;
+                padding: 20px 10px;
+                color: #6f6f6f;
+                text-align: center;
+                }
+             tr td.row_1 {
+                background-color: #70c469;
+                padding: 5px 10px 0 10px;
+                font-size: .8em;
+                color: #ddd;
+                }
+            }
+    .rooms-footer {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+        .link-button {
+        float: right;
+            a {
+                background-color: #1B9AF7;
+                border-color: #1B9AF7;
+                color: #FFF;
+                padding: 8px 40px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+// GALLERY
+// https://codepen.io/ramenhog/pen/MpORPa
+.my-gallery  {
+            display: grid;
+            grid-gap: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-auto-rows: 60px;
+            grid-auto-flow: row dense;
+            display: -ms-grid;
+            -ms-grid-gap: 8px;
+            -ms-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            -ms-grid-auto-rows: 60px;
+            -ms-grid-auto-flow: row dense;
+    figure {
+      margin: 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position: 50% 50%;
+      color: #fff;
+      grid-column-start: auto;
+      grid-row-start: auto;      
+      -ms-grid-column-start: auto;
+      -ms-grid-row-start: auto;
+      color: #fff;
+      box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+      counter-increment: item-counter;
+      img {
+        display: none;
+      }
+     }
+    .medium {
+        -ms-grid-row-end: span 2;
+    }
+    .large {
+        -ms-grid-row-end: span 3;
+    }
+    .full {
+       -ms-grid-column-end: auto;
+            @media screen and (min-width: 768px) {
+            -ms-grid-column: 1/3;
+            -ms-grid-row-end: span 4;
+        }
+    }
+    figcaption {
+      display: none;
+    }
+}
+/*  */
+/* Reviews */
+/*  */
+.reviews-inside {
+    .reviews-title {
+        font-family: 'Bebas Neue','Montserrat',Arial;
+        font-style: normal;
+        font-weight: normal;
+        padding: 0 20px;
+        font-size: 4em;
+        text-transform: uppercase;
+    }
+    .review-wrapper {
+        padding: 20px;
+    }
+    .review {
+        margin-bottom: 20px;
+        .review-inside {
+            border: 1px #eee solid;
+            padding: 20px;
+            background: #f5f5f5;
+            .review-title {
+                font-family: 'Bebas Neue','Montserrat',Arial;
+                font-style: normal;
+                font-weight: normal;
+                font-size:2em;
+                    padding-bottom: 0.5em;
+                    text-transform: uppercase;
+            }
+            .review-details {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.3em;
+    }
+}
+
+
+/*  */
+/* Reservation */
+/*  */
+.reservation {
+    .reservation-title {
+        font-family: 'Bebas Neue','Montserrat',Arial;
+        font-style: normal;
+        font-weight: normal;
+        padding: 0 20px;
+        font-size: 4em;
+        text-transform: uppercase;
+        padding-bottom: 0.5em;
+    }
+    .reservation-inside {
+        // @include container;
+        padding: 7em 0 8em 0;
+        textarea, select, input[type="date"], 
+        input[type="email"], 
+        input[type="number"], input[type="text"] {
+            box-sizing: border-box;
+            background-clip: padding-box;
+            border-radius: 0;
+            background-color: white;
+            border: 1px solid;
+            border-color: none;
+            color: black;
+            outline: 0;
+            margin: 0;
+            padding: 2px 3px;
+            text-align: left;
+            height: 2.5em;
+            vertical-align: top;
+        }
+       .error-message {
+            display: none;
+            background: #FF4343;
+            padding: 1em;
+            margin: 1em 0 2em;
+            h1 {
+                font-family: 'PT Sans';
+            }
+       }
+        .success-message {
+            display: none;
+            background: #DAC03D;
+            padding: 1em;
+            margin: 1em 0 2em;
+            h1 {
+                font-family: 'PT Sans';
+            }
+        }
+        input[type="submit"] {
+            border-radius: 0px;
+            background-clip: padding-box;
+            background-color: #f78c0d;
+            background-image: none;
+            border: none;
+            cursor: pointer;
+            color: #333333;
+            display: inline-block;
+            outline: 0;
+            overflow: visible;
+            margin: 0;
+            padding: 10px 45px;
+            text-shadow: none;
+            text-decoration: none;
+            vertical-align: top;
+        }
+        label {
+            color: #ffffff;
+        }
+        .reservation-fields {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0 20px;
+            .field {
+                display: flex;
+                flex-direction: column;
+            }
+            input,
+            .form-select ,
+            label{
+                margin-bottom: 1em;
+            }
+
+        }
+        .reservation-message {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2em;
+            padding: 0 20px;
+            label{
+                margin-bottom: 1.2em;
+                width: 100%;
+            }
+            textarea {
+                height: 5em;
+                width: 100%;
+            }
+        }
+        .reservation-footer {
+            padding: 0 20px;
+            justify-content: center;
+            display: flex;
+        }
+        .parsley-errors-list {
+            display: inline;
+            float: left;
+            background: #ECB34C;
+            padding: 0.5em 2em;
+        }
+    }
+  }
+/* Reservatiion date Picker */
+.rd-container {
+    th,td {
+    font-size: 1.1em; 
+    padding: 0.3em;
+    }
+}
+
+/*  */
+/* Contact */
+/*  */
+.contact {
+    background-color: #88505a;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #fff;
+    .email,
+    .phone {
+        font-size: 1.5em;
+        line-height: 3em;
+     }
+    a {
+      color: #fff;
+      text-decoration:none;
+    }
+}
+/*  */
+/* Footer */
+/*  */
+    .site-footer  {
+        background: #dddddd;
+        .footer-col-2,
+        .footer-col-1 {
+            // @include span(4 of 12);
+        }
+        .footer-col-3 {
+            // @include span(4 last of 12); 
+        }
+    }
+
+
+
+
+
+@media (min-width: 800px) {
+  .slideshow-title-small, .navigation .mob ,.contact-mob {
+        display: none;
+      }
+  }
+@media (max-width: 801px) {
+    .slideshow-title, .menu .hidden, .navigation .large {
+        display: none;
+      }
+    .navigation a.large {
+        order: 2;
+    }
+}
+@media (min-width: 600px) {
+    .reservation-fields {
+        .field {
+            flex-basis: 48%;
+        }
+    }
+
+}
+@media (max-width: 601px) {
+    .my-gallery  {
+            display: grid;
+            grid-gap: 8px;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            grid-auto-rows: 60px;
+            grid-auto-flow: row dense;
+            -ms-grid-gap: 8px;
+            -ms-grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            -ms-grid-auto-rows: 60px;
+            -ms-grid-auto-flow: row dense;
+        figure {
+          margin: 0;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          box-sizing: border-box;
+          background-size: cover;
+          background-position: 50% 50%;
+          color: #fff;
+          grid-column-start: auto;
+          grid-row-start: auto;
+            -ms-grid-column-start: auto;
+          -ms-grid-row-start: auto;
+          color: #fff;
+          box-shadow: -2px 2px 10px 0px rgba(#444, 0.4);
+          transition: transform 0.3s ease-in-out;
+          cursor: pointer;
+          counter-increment: item-counter;
+        }
+        figure:nth-child(1) {
+            grid-row-end: span 5;
+            grid-column-end: span 5;
+            -ms-grid-row-end: span 5;
+            -ms-grid-column-end: span 5;
+        }
+        .large {
+            -ms-grid-row-end: span 1;
+        }
+    }
+    .reservation-fields {
+        flex-direction: column;
+    }
+    .column-right {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1100px)  {
+    .rooms-header {
+        padding: 0 20px;
+    }
+
+}
+@media (max-height: 699px) {
+    .hero {
+      height: 368px;
+    }
+}
+@media (min-height: 700px) {
+    .hero {
+      height: 368px;
+    }
+}
+@media (min-height: 850px) {
+    .hero {
+      height: 468px;
+    }
+}
+@media (min-height: 1000px) {
+    .hero {
+      height: 568px;
+    }
+}
+@media (min-width: 744px)and (min-height: 700px) {
+    .hero {
+      height: 441.6px;
+    }
+}
+@media (min-width: 744px)and (min-height: 850px) {
+    .hero {
+      height: 561.6px;
+    }
+}
+@media (min-width: 744px)and (min-height: 1000px) {
+    .hero {
+       height: 681.6px;
+    }
+}
+@media (min-width: 1128px)and (min-height: 700px) {
+    .hero {
+       height: 552px;
+    }
+}
+@media (min-width: 1128px) and (min-height: 850px) {
+    .hero {
+       height: 702px;
+    }
+}
+@media (min-width: 1128px) and (min-height: 1000px) {
+    .hero {
+       height: 852px;
+    }
+}
+
+
+

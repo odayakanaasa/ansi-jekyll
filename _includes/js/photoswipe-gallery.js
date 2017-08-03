@@ -117,7 +117,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             var pair = vars[i].split('=');  
             if(pair.length < 2) {
                 continue;
-            }           
+            }
             params[pair[0]] = pair[1];
         }
 
@@ -144,7 +144,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
             getThumbBoundsFn: function(index) {
                 // See Options -> getThumbBoundsFn section of documentation for more info
-                var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                var thumbnail = items[index].el.getElementsByTagName('a')[0], // find thumbnail
                     pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
                     rect = thumbnail.getBoundingClientRect(); 
 
@@ -203,3 +203,33 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
+
+var ll = $('div');
+var lh = []
+var wscroll = 0;
+var wh = $(window).height();
+
+function update_offsets(){
+  $('figure').each(function(){
+    var x = $(this).offset().top;
+    lh.push(x);
+  });
+};
+
+function lazy() {
+  wscroll = $(window).scrollTop();
+  for(i = 0; i < lh.length; i++){
+    if(lh[i] <= wscroll + (wh - 200)){
+      $('div').eq(i).addClass('loaded');
+    };
+  };
+};
+
+// Page Load
+update_offsets();
+lazy();
+
+$(window).on('scroll',function(){
+  lazy();
+  console.log('test load');
+});

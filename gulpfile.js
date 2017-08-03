@@ -4,15 +4,26 @@ var responsive     = require('gulp-responsive');
 var image          = require('gulp-image');
 var rename         = require ('gulp-rename');
 const fs           = require('fs');
+var concat         = require('gulp-concat');
 const gutil        = require('gulp-util');
+var gulpif         = require('gulp-if');
 const recursiveReadSync = require('recursive-readdir-sync');
 const imgsize        = require('image-size');
 const merge          = require('deepmerge');
 const yaml           = require('js-yaml');
 const pump           = require('pump');
 const uglify         = require('gulp-uglify');
-var purify = require('gulp-purifycss');
+var purify           = require('gulp-purifycss');
 var nano           = require('gulp-cssnano');
+
+var sass           = require('gulp-sass');
+var postcss        = require('gulp-postcss');
+var autoprefixer   = require('autoprefixer');
+var pxtorem        = require('postcss-pxtorem');
+var orderedValues  = require('postcss-ordered-values');
+var colorHexAlpha  = require("postcss-color-hex-alpha");
+var responsiveType = require("postcss-responsive-type");
+var debug          = require('postcss-debug').createDebugger();
 
 gulp.task('images', function () {
   gulp.src('./assets/**/*.*')
@@ -259,4 +270,33 @@ gulp.task('maincss', function() {
     .pipe(nano())
     .pipe(gulp.dest('assets/css/optimized'))
     .pipe(gulp.dest('_includes/css'));
+});
+
+
+/**
+ * Compile files from _resources/_scss into both [project-folder]/_site/css (for live injecting) and [project-folder]/css (for future jekyll builds)
+ */
+var config = {
+    assetsDir: '_resources',
+    bowerDir: '_resources/bower/bower.json',
+    sassPattern: 'sass/**/*.scss',
+    jsPattern: 'js/**/*.js'};
+
+gulp.task('styles', function () {
+  var processors = [
+    autoprefixer({browsers: ['last 3 version']}),
+    pxtorem({replace: false,selectorBlackList: ['btn-floating']}),
+    colorHexAlpha(),
+    responsiveType(),
+  ];
+   return gulp.src('./_sass/styles.scss')
+        .pipe(sass({
+            includePaths: ['scss']
+        }).on('error', sass.logError))
+        .pipe(postcss(debug(processors)))
+        .pipe(concat('styles.css'))
+        .pipe(gulp.dest('_site/assets/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('./assets/css'));
+
 });
