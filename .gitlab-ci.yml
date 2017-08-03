@@ -7,6 +7,7 @@ variables:
   JEKYLL_ENV: production
 
 before_script:
+- bundle config disable_checksum_validation true
 - bundle install
 
 test:
@@ -22,7 +23,6 @@ test:
 pages:
   stage: deploy
   script:
-  - bundle config disable_checksum_validation true
   - bundle exec jekyll build -d public --config _config.yml
   variables:
     JEKYLL_ENV: production
