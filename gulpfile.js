@@ -266,7 +266,7 @@ gulp.task('js-compress', function (cb) {
 
 
 gulp.task('maincss', function() {
-  return gulp.src(['./_site/css/styles.css'])
+  return gulp.src(['./_site/assets/css/styles.css'])
     .pipe(nano())
     .pipe(gulp.dest('assets/css/optimized'))
     .pipe(gulp.dest('_includes/css'));
@@ -298,5 +298,5 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('./assets/css'));
-
 });
+

@@ -1,9 +1,5 @@
-/* start content */
 @import "bower_components/photoswipe/dist/photoswipe.css";
 @import "bower_components/photoswipe/dist/default-skin/default-skin.css";
-/* <!-- Flexslider CSS --> */
-@import "bower_components/flexslider/flexslider.css";
-/* Pasley */
 @import "bower_components/parsleyjs/src/parsley.css";
 @import "classic";
 @import "classic.date";
@@ -31,19 +27,19 @@
 }
 @font-face {
   font-family: 'Bebas Neue';
-  src: url('/css/fonts/BebasNeue Bold.eot'); /* IE9 Compat Modes */
-  src: url('/css/fonts/BebasNeue Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/css/fonts/BebasNeue Bold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/css/fonts/BebasNeue Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/css/fonts/BebasNeue Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('/assets/fonts/BebasNeue Bold.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/BebasNeue Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/BebasNeue Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/BebasNeue Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/BebasNeue Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face {
   font-family: 'PT Sans';
-  src: url('/css/fonts/PTS55F-webfont.eot'); /* IE9 Compat Modes */
-  src: url('/css/fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/css/fonts/PTS55F-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/css/fonts/PTS55F-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/css/fonts/PTS55F-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('/assets/fonts/PTS55F-webfont.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/PTS55F-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/PTS55F-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/PTS55F-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 body {
     font-family: 'PT Sans';
