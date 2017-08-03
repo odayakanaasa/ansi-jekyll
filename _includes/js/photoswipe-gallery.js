@@ -204,32 +204,32 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
 
-var ll = $('div');
-var lh = []
-var wscroll = 0;
-var wh = $(window).height();
+// var ll = $('div');
+// var lh = []
+// var wscroll = 0;
+// var wh = $(window).height();
 
-function update_offsets(){
-  $('figure').each(function(){
-    var x = $(this).offset().top;
-    lh.push(x);
-  });
-};
+// function update_offsets(){
+//   $('figure').each(function(){
+//     var x = $(this).offset().top;
+//     lh.push(x);
+//   });
+// };
 
-function lazy() {
-  wscroll = $(window).scrollTop();
-  for(i = 0; i < lh.length; i++){
-    if(lh[i] <= wscroll + (wh - 200)){
-      $('div').eq(i).addClass('loaded');
-    };
-  };
-};
+// function lazy() {
+//   wscroll = $(window).scrollTop();
+//   for(i = 0; i < lh.length; i++){
+//     if(lh[i] <= wscroll + (wh - 200)){
+//       $('div').eq(i).addClass('loaded');
+//     };
+//   };
+// };
 
-// Page Load
-update_offsets();
-lazy();
+// // Page Load
+// update_offsets();
+// lazy();
 
-$(window).on('scroll',function(){
-  lazy();
-  console.log('test load');
-});
+// $(window).on('scroll',function(){
+//   lazy();
+//   console.log('test load');
+// });
