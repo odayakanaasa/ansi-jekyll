@@ -645,10 +645,16 @@ p {
   .slideshow-title-small, .navigation .mob ,.contact-mob {
         display: none;
       }
+  .slideshow-title, .menu .hidden, .navigation .large {
+        display: flex;
+      }
   }
 @media (max-width: 801px) {
     .slideshow-title, .menu .hidden, .navigation .large {
         display: none;
+      }
+    .slideshow-title-small, .navigation .mob ,.contact-mob {
+        display: flex;
       }
     .navigation a.large {
         order: 2;
