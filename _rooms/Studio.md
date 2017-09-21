@@ -6,9 +6,9 @@ section: studio
 published: true
 order: 1
 low: "40€"
-medium1: "45€"
-medium2: "50€"
-high: "60€"
+medium1: "50€"
+medium2: "60€"
+high: "70€"
 prices-from: "from 40€"
 ---
 

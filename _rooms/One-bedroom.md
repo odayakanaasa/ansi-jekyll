@@ -5,11 +5,11 @@ subtitle: 2 or 3 persons
 section: onebedroom
 published: true
 order: 2
-low: "45€"
-medium1: "55€"
-medium2: "60€"
-high: "70€"
-prices-from: "from 45€"
+low: "50€"
+medium1: "60€"
+medium2: "70€"
+high: "80€"
+prices-from: "from 50€"
 ---
 
 One bedroom Apartments are suitable for 2 or 3 persons.

@@ -6,9 +6,9 @@ section: twobedroom
 published: true
 order: 3
 low: "80€"
-medium1: "80€"
-medium2: "85€"
-high: "100€"
+medium1: "90€"
+medium2: "100€"
+high: "120€"
 prices-from: "from 80€"
 ---
 
